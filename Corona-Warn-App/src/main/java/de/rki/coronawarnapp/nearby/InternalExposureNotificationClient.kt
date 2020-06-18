@@ -10,7 +10,6 @@ import java.util.Date
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
-import org.coralibre.android.sdk.fakegms.nearby.Nearby
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration.ExposureConfigurationBuilder
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
@@ -24,7 +23,7 @@ object InternalExposureNotificationClient {
 
     // reference to the client from the Google framework with the given application context
     private val exposureNotificationClient by lazy {
-        Nearby.getExposureNotificationClient(CoronaWarnApplication.getAppContext())
+        ExposureNotificationClientFactory.createClient()
     }
 
     /****************************************************
