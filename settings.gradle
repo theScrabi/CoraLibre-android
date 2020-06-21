@@ -1,2 +1,4 @@
 rootProject.name = 'Corona-Warn'
 include ':Corona-Warn-App', ':Server-Protocol-Buffer'
+
+includeBuild '../CoraLibre-android-sdk/coralibre-sdk'
