@@ -5,9 +5,12 @@ import androidx.fragment.app.testing.FragmentScenario
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.common.api.Status
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
+// import com.google.android.gms.common.api.ApiException
+// import com.google.android.gms.common.api.Status
+// import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
+import org.coralibre.android.sdk.fakegms.common.api.Status
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.TestFragment
 import io.mockk.coEvery

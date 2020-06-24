@@ -5,13 +5,13 @@ import android.content.Context
 import android.content.Intent
 import androidx.work.Data
 import androidx.work.OneTimeWorkRequest
-import androidx.work.WorkManager
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationClient
+import androidx.work.workManager
 import de.rki.coronawarnapp.exception.ExceptionCategory.INTERNAL
 import de.rki.coronawarnapp.exception.NoTokenException
 import de.rki.coronawarnapp.exception.WrongReceiverException
 import de.rki.coronawarnapp.exception.reporting.report
 import de.rki.coronawarnapp.nearby.ExposureStateUpdateWorker
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
 
 /**
  * Receiver to listen to the Exposure Notification Exposure State Updated event. This event will be triggered from the

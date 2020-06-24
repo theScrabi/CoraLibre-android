@@ -3,14 +3,14 @@ package de.rki.coronawarnapp.nearby
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationClient
 import de.rki.coronawarnapp.exception.ExceptionCategory
 import de.rki.coronawarnapp.exception.NoTokenException
 import de.rki.coronawarnapp.exception.TransactionException
 import de.rki.coronawarnapp.exception.reporting.report
 import de.rki.coronawarnapp.storage.ExposureSummaryRepository
 import de.rki.coronawarnapp.transaction.RiskLevelTransaction
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
 import timber.log.Timber
 
 class ExposureStateUpdateWorker(val context: Context, workerParams: WorkerParameters) :

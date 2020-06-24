@@ -1,7 +1,6 @@
 package de.rki.coronawarnapp.transaction
 
 import KeyExportFormat
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
 import de.rki.coronawarnapp.service.diagnosiskey.DiagnosisKeyService
 import de.rki.coronawarnapp.service.submission.SubmissionService
@@ -15,6 +14,7 @@ import io.mockk.mockkObject
 import io.mockk.slot
 import io.mockk.unmockkAll
 import kotlinx.coroutines.runBlocking
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.After

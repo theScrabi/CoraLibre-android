@@ -1,6 +1,5 @@
 package de.rki.coronawarnapp.service.submission
 
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.exception.NoGUIDOrTANSetException
 import de.rki.coronawarnapp.exception.NoRegistrationTokenSetException
 import de.rki.coronawarnapp.http.WebRequestBuilder
@@ -9,6 +8,7 @@ import de.rki.coronawarnapp.service.submission.SubmissionConstants.TELE_TAN_KEY_
 import de.rki.coronawarnapp.storage.LocalData
 import de.rki.coronawarnapp.transaction.SubmitDiagnosisKeysTransaction
 import de.rki.coronawarnapp.util.formatter.TestResult
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 
 object SubmissionService {
     suspend fun asyncRegisterDevice() {

@@ -1,7 +1,6 @@
 package de.rki.coronawarnapp.transaction
 
 import androidx.core.app.NotificationCompat
-import com.google.android.gms.nearby.exposurenotification.ExposureSummary
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.R
 import de.rki.coronawarnapp.exception.RiskLevelCalculationException
@@ -36,6 +35,7 @@ import de.rki.coronawarnapp.util.ConnectivityHelper
 import de.rki.coronawarnapp.util.TimeAndDateExtensions.millisecondsToHours
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
 import timber.log.Timber
 import java.util.concurrent.atomic.AtomicReference
 

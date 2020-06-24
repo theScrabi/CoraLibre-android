@@ -1,10 +1,5 @@
 package de.rki.coronawarnapp.nearby
 
-import com.google.android.gms.nearby.Nearby
-import com.google.android.gms.nearby.exposurenotification.ExposureConfiguration
-import com.google.android.gms.nearby.exposurenotification.ExposureConfiguration.ExposureConfigurationBuilder
-import com.google.android.gms.nearby.exposurenotification.ExposureSummary
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.risk.TimeVariables
 import de.rki.coronawarnapp.storage.LocalData
@@ -15,6 +10,11 @@ import java.util.Date
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
+import org.coralibre.android.sdk.fakegms.nearby.Nearby
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration.ExposureConfigurationBuilder
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 
 /**
  * Wrapper class for the Exposure Notification Client in the com.google.android.gms.nearby.Nearby

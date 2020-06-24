@@ -1,6 +1,5 @@
 package de.rki.coronawarnapp.storage
 
-import com.google.android.gms.nearby.exposurenotification.ExposureSummary
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.coVerify
@@ -9,6 +8,7 @@ import io.mockk.impl.annotations.MockK
 import io.mockk.mockk
 import io.mockk.unmockkAll
 import kotlinx.coroutines.runBlocking
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

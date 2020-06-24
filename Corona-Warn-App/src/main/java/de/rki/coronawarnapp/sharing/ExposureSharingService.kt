@@ -3,7 +3,8 @@ package de.rki.coronawarnapp.sharing
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.util.Base64
-import com.google.android.gms.common.api.ApiException
+// import com.google.android.gms.common.api.ApiException
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
 import com.google.protobuf.ByteString
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.qrcode.QRCodeWriter

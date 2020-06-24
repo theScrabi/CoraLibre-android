@@ -1,15 +1,14 @@
 package de.rki.coronawarnapp.nearby
 
 import android.app.Activity
-import android.content.IntentSender
+// import android.content.IntentSender
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationStatusCodes
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.exception.ENPermissionException
 import de.rki.coronawarnapp.exception.ExceptionCategory
 import de.rki.coronawarnapp.exception.reporting.report
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 import kotlinx.coroutines.launch
 
 /**
@@ -110,6 +109,11 @@ class InternalExposureNotificationPermissionHelper(
             return
         }
 
+        // Change with CoraLibre:
+        // We do not communicate with the real google play API ever, thus the following code is
+        // not required. However, for safety/debugging the exception is still returned.
+
+        /*
         if (apiException.statusCode == ExposureNotificationStatusCodes.RESOLUTION_REQUIRED) {
             try {
                 permissionResolutionInProgress = true
@@ -123,6 +127,9 @@ class InternalExposureNotificationPermissionHelper(
         } else {
             returnError(apiException)
         }
+        */
+
+        returnError(apiException)
     }
 
     /**

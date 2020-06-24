@@ -1,8 +1,8 @@
 package de.rki.coronawarnapp.storage
 
 import androidx.lifecycle.MutableLiveData
-import com.google.android.gms.nearby.exposurenotification.ExposureSummary
 import de.rki.coronawarnapp.CoronaWarnApplication
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
 
 class ExposureSummaryRepository(private val exposureSummaryDao: ExposureSummaryDao) {
     companion object {

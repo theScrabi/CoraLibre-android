@@ -19,7 +19,6 @@
 
 package de.rki.coronawarnapp.transaction
 
-import com.google.android.gms.nearby.exposurenotification.ExposureConfiguration
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
 import de.rki.coronawarnapp.service.applicationconfiguration.ApplicationConfigurationService
@@ -36,6 +35,7 @@ import de.rki.coronawarnapp.transaction.RetrieveDiagnosisKeysTransaction.Retriev
 import de.rki.coronawarnapp.transaction.RetrieveDiagnosisKeysTransaction.rollback
 import de.rki.coronawarnapp.transaction.RetrieveDiagnosisKeysTransaction.start
 import de.rki.coronawarnapp.util.CachedKeyFileHolder
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
 import timber.log.Timber
 import java.io.File
 import java.util.Date

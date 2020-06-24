@@ -1,6 +1,5 @@
 package de.rki.coronawarnapp.transaction
 
-import com.google.android.gms.nearby.exposurenotification.ExposureConfiguration
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
 import de.rki.coronawarnapp.service.applicationconfiguration.ApplicationConfigurationService
 import de.rki.coronawarnapp.storage.LocalData
@@ -13,6 +12,7 @@ import io.mockk.mockk
 import io.mockk.mockkObject
 import io.mockk.unmockkAll
 import kotlinx.coroutines.runBlocking
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

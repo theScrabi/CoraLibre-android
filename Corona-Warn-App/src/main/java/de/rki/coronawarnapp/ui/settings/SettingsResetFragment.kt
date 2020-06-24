@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityEvent
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.google.android.gms.common.api.ApiException
 import de.rki.coronawarnapp.R
 import de.rki.coronawarnapp.databinding.FragmentSettingsResetBinding
 import de.rki.coronawarnapp.exception.ExceptionCategory
@@ -22,6 +21,7 @@ import de.rki.coronawarnapp.worker.BackgroundWorkScheduler
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
 
 /**
  * The user is informed what a reset means and he can perform it.

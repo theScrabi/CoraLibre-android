@@ -1,6 +1,5 @@
 package de.rki.coronawarnapp.risk
 
-import com.google.android.gms.common.api.ApiException
 import de.rki.coronawarnapp.BuildConfig
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.exception.ExceptionCategory
@@ -10,6 +9,7 @@ import de.rki.coronawarnapp.storage.LocalData
 import de.rki.coronawarnapp.storage.tracing.TracingIntervalRepository
 import de.rki.coronawarnapp.util.TimeAndDateExtensions.daysToMilliseconds
 import de.rki.coronawarnapp.util.TimeAndDateExtensions.roundUpMsToDays
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
 
 object TimeVariables {
 
@@ -187,7 +187,7 @@ object TimeVariables {
             .toMutableList()
 
         // by default the tracing is assumed to be activated
-        // if the API is reachable we set the value accordingly 
+        // if the API is reachable we set the value accordingly
         var enIsDisabled = false
 
         try {
