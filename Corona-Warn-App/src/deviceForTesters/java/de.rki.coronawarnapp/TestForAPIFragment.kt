@@ -439,9 +439,12 @@ class TestForAPIFragment : Fragment(), InternalExposureNotificationPermissionHel
                 myExposureKeysJSON!!
             ) else null
 
+        // Explicit Int variable to prevent a linter error; see:
+        // https://stackoverflow.com/questions/49692633/gradle-plugin-lint-error-when-format-string-res
+        val keysSize: Int = myKeys?.size ?: 0
         val myKeysLabelAndCount = getString(
             R.string.test_api_body_my_keys,
-            myKeys?.size ?: 0
+            keysSize
         )
         label_my_keys.text = myKeysLabelAndCount
         text_my_keys.text = myExposureKeysJSON
