@@ -65,12 +65,27 @@ class ExposureSummaryRepositoryTest {
      */
     @Test
     fun testInsert() {
+        // The following workaround for CoraLibre is required to prevent this test from failing
+        // due to a mysterious "Mockk: Missing calls inside every { ... } block" error:
+        // TODO: Revert this workaround, make the original test succeed
+
+        /*
         val es = mockk<ExposureSummary>()
         every { es.attenuationDurationsInMinutes } returns intArrayOf(0)
         every { es.daysSinceLastExposure } returns 1
         every { es.matchedKeyCount } returns 1
         every { es.maximumRiskScore } returns 0
         every { es.summationRiskScore } returns 0
+        */
+
+        val es = ExposureSummary()
+        es.attenuationDurationsInMinutes = intArrayOf(0)
+        es.daysSinceLastExposure = 1
+        es.matchedKeyCount = 1
+        es.maximumRiskScore = 0
+        es.summationRiskScore = 0
+
+        // End of workaround
 
         runBlocking {
             repository.insertExposureSummaryEntity(es)
