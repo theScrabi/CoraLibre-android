@@ -36,7 +36,7 @@ android {
         versionCode 34
         versionName "1.1.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        
+
         resConfigs "de", "en", "tr"
 
         buildConfigField "String", "DOWNLOAD_CDN_URL", "\"$DOWNLOAD_CDN_URL\""
@@ -91,12 +91,12 @@ android {
         device {
             dimension "version"
             buildConfigField "String", "BUILD_VARIANT", "\"device\""
-            resValue "string", "app_name", "Corona-Warn"
+            resValue "string", "app_name", "CoraLibre"
         }
         deviceForTesters {
             dimension "version"
             buildConfigField "String", "BUILD_VARIANT", "\"deviceForTesters\""
-            resValue "string", "app_name", "CWA TEST"
+            resValue "string", "app_name", "CoraLibre TEST"
             applicationIdSuffix '.dev'
 
             def environmentPropertiesFile = project.rootProject.file('environment.properties')
