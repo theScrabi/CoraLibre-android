@@ -83,7 +83,7 @@
     <!-- XACT: menu description for screen readers -->
     <string name="accessibility_close">"Close"</string>
     <!-- XACT: menu description for screen readers -->
-    <string name="accessibility_logo">"Corona-Warn-App"</string>
+    <string name="accessibility_logo">"CoraLibre"</string>
 
     <!-- ####################################
                      Menu
@@ -104,13 +104,13 @@
     <!-- NOTR -->
     <string name="notification_id"><xliff:g id="notification_id">"1"</xliff:g></string>
     <!-- XTXT: Notification channel name for os settings -->
-    <string name="notification_name">"Corona-Warn-App"</string>
+    <string name="notification_name">"CoraLibre"</string>
     <!-- XTXT: Notification channel description for os settings -->
-    <string name="notification_description">"Notifications from the Corona-Warn-App"</string>
+    <string name="notification_description">"Notifications from CoraLibre"</string>
     <!-- XHED: Notification title -->
-    <string name="notification_headline">"Corona-Warn-App"</string>
+    <string name="notification_headline">"CoraLibre"</string>
     <!-- XTXT: Notification body -->
-    <string name="notification_body">"You have new messages from your Corona-Warn-App."</string>
+    <string name="notification_body">"You have new messages from CoraLibre."</string>
 
     <!-- ####################################
               App Auto Update
@@ -119,7 +119,7 @@
     <!-- XHED: App Auto Update dialog title -->
     <string name="update_dialog_title">"Update available"</string>
     <!-- XTXT: App Auto Update dialog message -->
-    <string name="update_dialog_message">"Please note, you can only use the Corona-Warn-App again once you have installed the latest update."</string>
+    <string name="update_dialog_message">"Please note, you can only use CoraLibre again once you have installed the latest update."</string>
     <!-- XBUT: App Auto Update button -->
     <string name="update_dialog_button">"Update"</string>
 
@@ -183,18 +183,18 @@
     <!-- XHED: main, FAQ -->
     <string name="main_about_headline">"FAQ"</string>
     <!-- XTXT: main, explains faq on card -->
-    <string name="main_about_body">"Here you can find answers to frequently asked questions about the Corona-Warn-App. You will be forwarded to an external website."</string>
+    <string name="main_about_body">"Here you can find answers to frequently asked questions about CoraLibre. You will be forwarded to an external website."</string>
     <!-- NOTR -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq-englisch"</string>
     <!-- XACT: Opens external webpage -->
-    <string name="hint_external_webpage">"Here you can find answers to frequently asked questions about the Corona-Warn-App. You will be forwarded to an external website."</string>
+    <string name="hint_external_webpage">"Here you can find answers to frequently asked questions about CoraLibre. You will be forwarded to an external website."</string>
 
     <!-- ####################################
                Main - Share
     ###################################### -->
 
     <!-- XHED: Share app link page title -->
-    <string name="main_share_title">"Share the Corona-Warn-App"</string>
+    <string name="main_share_title">"Share CoraLibre"</string>
     <!-- XHED: Share app link page subtitle -->
     <string name="main_share_headline">"Let\'s fight coronavirus together"</string>
     <!-- YTXT: Share app link page body -->
@@ -204,7 +204,7 @@
     <!-- YMSG: Message when sharing is executed -->
     <string name="main_share_message">"Fighting coronavirus together"<xliff:g id="line_break">"\n"</xliff:g>"I\'m in on this, you too?"<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="link_play_store">"https://www.corona-warn-app.de"</xliff:g><xliff:g id="line_break">"\n"</xliff:g></string>
     <!-- XACT: main (share) - illustraction description, explanation image -->
-    <string name="main_share_illustration_description">"One man is sharing the Corona-Warn-App with four other people."</string>
+    <string name="main_share_illustration_description">"One man is sharing CoraLibre with four other people."</string>
 
     <!-- ####################################
                 Main - Overview
@@ -251,7 +251,7 @@
     <!-- XHED: App overview subtitle for glossary notifications -->
     <string name="main_overview_subtitle_glossary_notification">"Exposure Notification"</string>
     <!-- YTXT: App overview body for glossary notifications -->
-    <string name="main_overview_body_glossary_notification">"Display exposures in the Corona-Warn-App."</string>
+    <string name="main_overview_body_glossary_notification">"Display exposures in CoraLibre."</string>
     <!-- XHED: App overview subtitle for glossary keys -->
     <string name="main_overview_subtitle_glossary_keys">"Random ID"</string>
     <!-- YTXT: App overview body for glossary keys -->
@@ -259,7 +259,7 @@
     <!-- XACT: main (overview) - illustraction description, explanation image -->
     <string name="main_overview_illustration_description">"One device shows different content numbered from 1 to 3."</string>
     <!-- XACT: App main page title -->
-    <string name="main_title">"Main page of the Corona-Warn-App"</string>
+    <string name="main_title">"Main page of CoraLibre"</string>
 
     <!-- ####################################
                Risk Details
@@ -336,7 +336,7 @@
     <!-- XHED: onboarding(together) - fight corona -->
     <string name="onboarding_headline">"Let\'s fight coronavirus together"</string>
     <!-- XHED: onboarding(together) - two/three line headline under an illustration -->
-    <string name="onboarding_subtitle">"More protection for you and for us all. By using the Corona-Warn-App we can break infection chains much quicker."</string>
+    <string name="onboarding_subtitle">"More protection for you and for us all. By using CoraLibre we can break infection chains much quicker."</string>
     <!-- YTXT: onboarding(together) - inform about the app -->
     <string name="onboarding_body">"Turn your device into a coronavirus warning system. Get an overview of your risk status and find out whether you\'ve had close contact with anyone diagnosed with COVID-19 in the last 14 days."</string>
     <!-- YTXT: onboarding(together) - explain application -->
@@ -349,7 +349,7 @@
     <string name="onboarding_privacy_headline">"Data Privacy"</string>
 
     <!-- XACT: onboarding(privacy) - illustraction description, header image -->
-    <string name="onboarding_privacy_illustration_description">"One of the women is using the Corona-Warn-App on her device. The padlock on the shield is the symbol for encrypted data."</string>
+    <string name="onboarding_privacy_illustration_description">"One of the women is using CoraLibre on her device. The padlock on the shield is the symbol for encrypted data."</string>
     <!-- XACT: Onboarding (tracing) page title -->
     <string name="onboarding_tracing_accessibility_title">"Onboarding page 3 of 5: How to Enable Exposure Logging"</string>
     <!-- XHED: onboarding(tracing) - how to enable tracing -->
@@ -363,13 +363,13 @@
     <!-- XHED: onboarding(tracing) - headline for consent information -->
     <string name="onboarding_tracing_headline_consent">"Declaration of Consent"</string>
     <!-- YTXT: onboarding(tracing) - body for consent information -->
-    <string name="onboarding_tracing_body_consent">"To find out whether you have been in contact with an infected person and whether there is a risk that you yourself have been infected, you need to enable the App’s exposure logging feature. By tapping on the “Enable” button, you agree to the enabling of the App’s exposure logging feature and the associated data processing."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"In order to use the App’s exposure logging feature, you will have to enable the COVID-19 Exposure Logging functionality provided by Google on your smartphone and grant the Corona-Warn-App permission to use this."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"When exposure logging is enabled, your smartphone continuously generates and transmits random IDs via Bluetooth, which other Android or Apple smartphones in your vicinity can receive if exposure logging is also enabled on them. Your smartphone, in turn, receives the random IDs of the other smartphones. Your own random IDs and those received from other smartphones are recorded in the exposure log and stored there for 14 days."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"To identify your risk of infection, the App loads a list – several times a day or on request – of the random IDs of all users who have told the App that they have been infected with the coronavirus. This list is then compared with the random IDs stored in the exposure log. If the App detects that you may have been in contact with an infected user, it will inform you of this and tell you that there is a risk that you are also infected. In this case, the App is also given access to other data stored in your smartphone’s exposure log (date, duration and Bluetooth signal strength of the contact)."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"The Bluetooth signal strength is used to derive the physical distance (the stronger the signal, the smaller the distance). The App then analyses this information in order to assess your likelihood of having been infected with the coronavirus and to give you recommendations for what to do next. This analysis is only performed locally on your smartphone. Apart from you, nobody (not even the RKI) will know whether you have been in contact with an infected person and what risk has been identified for you."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"To withdraw your consent to the exposure logging feature, you can disable the feature using the toggle switch in the App or delete the App. If you decide to use the exposure logging feature again, you can toggle the feature back on or reinstall the App. If you disable the exposure logging feature, the App will no longer check whether you have been in contact with an infected user. If you also wish to stop your device sending and receiving random IDs, you will need to disable COVID-19 Exposure Logging in your smartphone settings. Please note that your own random IDs and those received from other smartphones which are stored in the exposure log will not be deleted in the App. You can only permanently delete the data stored in the exposure log in your smartphone settings."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"The App’s privacy notice (including an explanation of the data processing carried out for the exposure logging feature) can be found in the menu under “Data Privacy Information”."</string>
+    <string name="onboarding_tracing_body_consent">"To find out whether you have been in contact with an infected person and whether there is a risk that you yourself have been infected, you need to enable the App’s exposure logging feature. By tapping on the “Enable” button, you agree to the enabling of the App’s exposure logging feature and the associated data processing."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"In order to use the App’s exposure logging feature, you will have to enable the COVID-19 Exposure Logging functionality provided by Google on your smartphone and grant CoraLibre permission to use this."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"When exposure logging is enabled, your smartphone continuously generates and transmits random IDs via Bluetooth, which other Android or Apple smartphones in your vicinity can receive if exposure logging is also enabled on them. Your smartphone, in turn, receives the random IDs of the other smartphones. Your own random IDs and those received from other smartphones are recorded in the exposure log and stored there for 14 days."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"To identify your risk of infection, the App loads a list – several times a day or on request – of the random IDs of all users who have told the App that they have been infected with the coronavirus. This list is then compared with the random IDs stored in the exposure log. If the App detects that you may have been in contact with an infected user, it will inform you of this and tell you that there is a risk that you are also infected. In this case, the App is also given access to other data stored in your smartphone’s exposure log (date, duration and Bluetooth signal strength of the contact)."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"The Bluetooth signal strength is used to derive the physical distance (the stronger the signal, the smaller the distance). The App then analyses this information in order to assess your likelihood of having been infected with the coronavirus and to give you recommendations for what to do next. This analysis is only performed locally on your smartphone. Apart from you, nobody (not even the RKI) will know whether you have been in contact with an infected person and what risk has been identified for you."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"To withdraw your consent to the exposure logging feature, you can disable the feature using the toggle switch in the App or delete the App. If you decide to use the exposure logging feature again, you can toggle the feature back on or reinstall the App. If you disable the exposure logging feature, the App will no longer check whether you have been in contact with an infected user. If you also wish to stop your device sending and receiving random IDs, you will need to disable COVID-19 Exposure Logging in your smartphone settings. Please note that your own random IDs and those received from other smartphones which are stored in the exposure log will not be deleted in the App. You can only permanently delete the data stored in the exposure log in your smartphone settings."<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="line_break">"\n"</xliff:g>"The App’s privacy notice (including an explanation of the data processing carried out for the exposure logging feature) can be found in the menu under “Data Privacy Information”."</string>
     <!-- XBUT: onboarding(tracing) - button enable tracing -->
     <string name="onboarding_tracing_button_next">"Activate Exposure Logging"</string>
     <!-- XTXT: onboarding(tracing) - dialog about tracing permission declined -->
     <string name="onboarding_tracing_dialog_headline">"Authorization"</string>
     <!-- YMSI: onboarding(tracing) - dialog about tracing -->
-    <string name="onboarding_tracing_dialog_body">"This means the Corona-Warn-App cannot send or receive notifications about your COVID-19 risk status. You can deactivate this feature at any time."</string>
+    <string name="onboarding_tracing_dialog_body">"This means CoraLibre cannot send or receive notifications about your COVID-19 risk status. You can deactivate this feature at any time."</string>
     <!-- XBUT: onboarding(tracing) - positive button (right) -->
     <string name="onboarding_tracing_dialog_button_positive">"Do Not Activate"</string>
     <!-- XBUT: onboarding(tracing) - negative button (right) -->
@@ -381,7 +381,7 @@
     <!-- XHED: onboarding(test) - about positive tests -->
     <string name="onboarding_test_headline">"If you are diagnosed with COVID-19..."</string>
     <!-- XHED: onboarding(test) - two/three line headline under an illustration -->
-    <string name="onboarding_test_subtitle">"...please report this in the Corona-Warn-App. Sharing your test results is voluntary and secure. Please do this for the sake of everyone\'s health."</string>
+    <string name="onboarding_test_subtitle">"...please report this in CoraLibre. Sharing your test results is voluntary and secure. Please do this for the sake of everyone\'s health."</string>
     <!-- YTXT: onboarding(test) - explain test -->
     <string name="onboarding_test_body">"Your notification is encrypted securely and processed on a secure server. People whose encrypted random IDs your device has collected, will now receive a warning along with information about what they should now do."</string>
     <!-- XACT: onboarding(test) - illustraction description, header image -->
@@ -466,7 +466,7 @@
     <!-- YTXT: settings(notification) - description text when it notifications are enabled -->
     <string name="settings_notifications_body_active">"Specify which areas you want to continue to receive notifications for."</string>
     <!-- XTXT: settings(notification) - explains what the user has to do to activate settings -->
-    <string name="settings_notifications_body_inactive">"To activate notifications, you must allow notifications for the Corona-Warn-App in your device settings."</string>
+    <string name="settings_notifications_body_inactive">"To activate notifications, you must allow notifications for CoraLibre in your device settings."</string>
     <!-- XHED: settings(notification) - card headline -->
     <string name="settings_notifications_headline_card">"Activate Notifications"</string>
     <!-- XHED: settings - notification headline on settings overview -->
@@ -521,7 +521,7 @@
     <!-- XHED: Subtitle for about information page -->
     <string name="information_about_headline">"Let\'s fight coronavirus together"</string>
     <!-- YTXT: Body text for about information page -->
-    <string name="information_about_body_emphasized">"The Robert Koch Institute (RKI) is Germany’s central body for the Federal States of Germany in the field of public health. The RKI is publishing the Corona-Warn-App for the federal government. The app represents the digital extension to the public health measures already introduced: social distancing, hygiene behavior, and face masks."</string>
+    <string name="information_about_body_emphasized">"The Robert Koch Institute (RKI) is Germany’s central body for the Federal States of Germany in the field of public health. The RKI is publishing CoraLibre for the federal government. The app represents the digital extension to the public health measures already introduced: social distancing, hygiene behavior, and face masks."</string>
     <!-- YTXT: Body text for about information page -->
     <string name="information_about_body">"Whoever uses the app helps to trace and break chains of infection. The app saves encounters with other people locally on your device. You are notified if you have encountered people who were later diagnosed with COVID-19. Your identity and privacy are always protected."</string>
     <!-- XACT: describes illustration -->
@@ -529,7 +529,7 @@
     <!-- XHED: Page title for privacy information page, also menu item / button text -->
     <string name="information_privacy_title">"Data Privacy Information"</string>
     <!-- XACT: describes illustration -->
-    <string name="information_privacy_illustration_description">"One of the women is using the Corona-Warn-App on her device. The padlock on the shield is the symbol for encrypted data."</string>
+    <string name="information_privacy_illustration_description">"One of the women is using CoraLibre on her device. The padlock on the shield is the symbol for encrypted data."</string>
     <!-- XTXT: Path to the full blown privacy html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_privacy_html_path">"privacy_en.html"</string>
     <!-- XHED: Page title for terms of use information page, also menu item / button text -->
@@ -545,7 +545,7 @@
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"How can we help you?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body">"For technical questions about the Corona-Warn-App, please contact our hotline."</string>
+    <string name="information_contact_body">"For technical questions about CoraLibre, please contact our hotline."</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_subtitle_phone">"Technical hotline:"</string>
     <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
@@ -665,7 +665,7 @@
     <!-- XHED: Page headline for results next steps  -->
     <string name="submission_test_result_steps_added_heading">"Test added successfully"</string>
     <!-- YTXT: Body text for for results next steps  -->
-    <string name="submission_test_result_steps_added_body">"Your test has been stored in the Corona-Warn-App."</string>
+    <string name="submission_test_result_steps_added_body">"Your test has been stored in CoraLibre."</string>
     <!-- XHED: Page headline for pending test result next steps  -->
     <string name="submission_test_result_pending_steps_waiting_heading">"Test result is not yet available"</string>
     <!-- YTXT: Body text for next steps section of waiting test result page -->
@@ -677,7 +677,7 @@
     <!-- XHED: Page headline for negative test result next steps  -->
     <string name="submission_test_result_negative_steps_negative_heading">"Your Test Result"</string>
     <!-- YTXT: Body text for next steps section of test negative result -->
-    <string name="submission_test_result_negative_steps_negative_body">"The laboratory result indicates no verification that you have coronavirus SARS-CoV-2.\n\nPlease delete the test from the Corona-Warn-App, so that you can save a new test code here if necessary."</string>
+    <string name="submission_test_result_negative_steps_negative_body">"The laboratory result indicates no verification that you have coronavirus SARS-CoV-2.\n\nPlease delete the test from CoraLibre, so that you can save a new test code here if necessary."</string>
     <!-- XBUT: negative test result : remove the test button -->
     <string name="submission_test_result_negative_remove_test_button">"Delete Test"</string>
     <!-- XHED: Page headline for positive test result screen  -->
@@ -693,7 +693,7 @@
     <!-- XHED: Page headline for invalid test result screen  -->
     <string name="submission_test_result_invalid_steps_invalid_heading">"Your Test Result"</string>
     <!-- YTXT: Body text for next steps section of invalid test result-->
-    <string name="submission_test_result_invalid_steps_invalid_body">"There was a problem evaluating your test. Please contact the public health authority to find out how to proceed. Please delete the test from your Corona-Warn-App so that you will be able to save a new test code there if necessary."</string>
+    <string name="submission_test_result_invalid_steps_invalid_body">"There was a problem evaluating your test. Please contact the public health authority to find out how to proceed. Please delete the test from CoraLibre so that you will be able to save a new test code there if necessary."</string>
     <!-- XBUT: invalid test result : remove the test button -->
     <string name="submission_test_result_invalid_remove_test_button">"Delete Test"</string>
     <!-- XHED: Dialog title for tracing required dailog  -->
@@ -705,7 +705,7 @@
     <!-- XHED: Dialog title for test removal  -->
     <string name="submission_test_result_dialog_remove_test_title">"Delete the test?"</string>
     <!-- YTXT: Dialog text for test removal -->
-    <string name="submission_test_result_dialog_remove_test_message">"The test will be permanently deleted from the Corona-Warn-App and cannot be added again. This procedure cannot be undone."</string>
+    <string name="submission_test_result_dialog_remove_test_message">"The test will be permanently deleted from CoraLibre and cannot be added again. This procedure cannot be undone."</string>
     <!-- XBUT: Positive button for test removal -->
     <string name="submission_test_result_dialog_remove_test_button_positive">"Remove"</string>
     <!-- XBUT: Negative button for test removal -->
@@ -733,7 +733,7 @@
     <!-- XHED: Page title for menu at the start of the submission process  -->
     <string name="submission_intro_title">"Have you been tested?"</string>
     <!-- XHED: Page headline for menu the at start of the submission process  -->
-    <string name="submission_intro_headline">"This is how the Corona-Warn-App works"</string>
+    <string name="submission_intro_headline">"This is how CoraLibre works"</string>
     <!-- YTXT: submission introduction text -->
     <string name="submission_intro_text">"For the app to work well, we are relying on the support of people who were diagnosed with COVID-19.\n\nSince only encrypted random IDs are exchanged, you remain anonymous. You can now proceed as follows:"</string>
     <!-- XBUT: Submission introduction next button-->
@@ -747,7 +747,7 @@
         <item>"If you do not have a TAN, you can request one by telephone."</item>
     </string-array>
     <!-- XACT: Submission Intro page title -->
-    <string name="submission_intro_accessibility_title">"Have you been tested? This is how the Corona-Warn-App works"</string>
+    <string name="submission_intro_accessibility_title">"Have you been tested? This is how CoraLibre works"</string>
 
     <!-- Dispatcher -->
     <!-- XHED: Page headline for dispatcher menu  -->
@@ -783,7 +783,7 @@
     <!-- XHED: Page headline for the positive result additional warning page-->
     <string name="submission_positive_other_warning_headline">"Please help all of us!"</string>
     <!-- YTXT: Body text for the positive result additional warning page-->
-    <string name="submission_positive_other_warning_body">"Next, you can make sure that the Corona-Warn-App shares your random IDs of the last 14 days with others. By doing this, you can warn other people and help to break the infection chain.\n\nSince only impersonal random IDs are transmitted, your identity remains anonymous."</string>
+    <string name="submission_positive_other_warning_body">"Next, you can make sure that CoraLibre shares your random IDs of the last 14 days with others. By doing this, you can warn other people and help to break the infection chain.\n\nSince only impersonal random IDs are transmitted, your identity remains anonymous."</string>
     <!-- XHED: Title for the privacy card-->
     <string name="submission_positive_other_warning_privacy_title">"Data Privacy"</string>
     <!-- YTXT: Body text for the privacy card-->

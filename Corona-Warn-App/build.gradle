@@ -83,18 +83,18 @@ android {
         }
     }
 
-    // One version contains our Test Fragments
+    // One version contains our Test Fragmentsjjkk
     flavorDimensions "version"
     productFlavors {
         device {
             dimension "version"
             buildConfigField "String", "BUILD_VARIANT", "\"device\""
-            resValue "string", "app_name", "Corona-Warn"
+            resValue "string", "app_name", "CoraLibre"
         }
         deviceForTesters {
             dimension "version"
             buildConfigField "String", "BUILD_VARIANT", "\"deviceForTesters\""
-            resValue "string", "app_name", "CWA TEST"
+            resValue "string", "app_name", "CoraLibre TEST"
             applicationIdSuffix '.dev'
 
             def environmentPropertiesFile = project.rootProject.file('environment.properties')
