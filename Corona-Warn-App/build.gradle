@@ -263,14 +263,6 @@ dependencies {
     androidTestImplementation "io.mockk:mockk-android:1.10.0"
     debugImplementation 'androidx.fragment:fragment-testing:1.2.4'
 
-    // Play Services
-    implementation 'com.google.android.play:core:1.7.3'
-    implementation 'com.google.android.gms:play-services-base:17.3.0'
-    implementation 'com.google.android.gms:play-services-basement:17.3.0'
-    implementation 'com.google.android.gms:play-services-safetynet:17.0.0'
-    implementation 'com.google.android.gms:play-services-tasks:17.1.0'
-    api fileTree(dir: 'libs', include: ['play-services-nearby-18.0.2-eap.aar'])
-
     // CoraLibre sdk including the FOSS EN service reimplementation
     implementation 'DP3T-SDK:sdk'
 
