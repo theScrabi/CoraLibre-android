@@ -1,4 +1,4 @@
-# CoraLibre Open Source version of the German Corona-Warn-App - Android
+# CoraLibre – Open Source version of the German Corona-Warn-App
 
 **Note:** This app is not ready for any meaningful usage yet.
 
