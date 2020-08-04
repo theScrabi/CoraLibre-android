@@ -292,11 +292,11 @@ class TestRiskLevelCalculation : Fragment() {
                     "Days Since Last Exposure: ${exposureSummary.daysSinceLastExposure}\n" +
                             "Matched Key Count: ${exposureSummary.matchedKeyCount}\n" +
                             "Maximum Risk Score: ${exposureSummary.maximumRiskScore}\n" +
-                            "Attenuation Durations: [${exposureSummary.attenuationDurationsInMinutes?.get(
+                            "Attenuation Durations: [${exposureSummary.attenuationDurations?.get(
                                 0
                             )}," +
-                            "${exposureSummary.attenuationDurationsInMinutes?.get(1)}," +
-                            "${exposureSummary.attenuationDurationsInMinutes?.get(2)}]\n" +
+                            "${exposureSummary.attenuationDurations?.get(1)}," +
+                            "${exposureSummary.attenuationDurations?.get(2)}]\n" +
                             "Summation Risk Score: ${exposureSummary.summationRiskScore}"
 
                 binding.labelExposureSummary.text = summaryAsString
@@ -304,7 +304,7 @@ class TestRiskLevelCalculation : Fragment() {
                 val maxRisk = exposureSummary.maximumRiskScore
                 val atWeights = appConfig.attenuationDuration?.weights
                 val attenuationDurationInMin =
-                    exposureSummary.attenuationDurationsInMinutes
+                    exposureSummary.attenuationDurations
                 val attenuationConfig = appConfig.attenuationDuration
                 val formulaString =
                     "($maxRisk / ${attenuationConfig?.riskScoreNormalizationDivisor}) * " +

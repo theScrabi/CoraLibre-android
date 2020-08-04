@@ -428,7 +428,7 @@ class TestForAPIFragment : Fragment(), InternalExposureNotificationPermissionHel
 
         label_exposure_summary_attenuation.text = getString(
             R.string.test_api_body_attenuation,
-            (exposureSummary?.attenuationDurationsInMinutes?.joinToString() ?: "-").toString()
+            (exposureSummary?.attenuationDurations?.joinToString() ?: "-").toString()
         )
     }
 
