@@ -7,6 +7,30 @@ We're trying to keep the CoraLibre app close to the official app and frequently 
 changes. The differences should be limited to branding and the replacement of the
 Google Play Services, other changes should be made in the upstream repository.
 
+## Working with the repository
+
+This repo uses [git submodules](https://git-scm.com/docs/gitsubmodules) to include the
+[CoraLibre-android-sdk](https://github.com/CoraLibre/CoraLibre-android-sdk). To get it to properly
+work, you need to clone the repo using the `--recurse-submodules` flag:
+
+```sh
+git clone --recurse-submodules git@github.com:CoraLibre/CoraLibre-android.git
+```
+
+If you already cloned the repo without the above flag:
+
+```sh
+git submodule update --init
+```
+
+If your local submodule content is outdated:
+
+```sh
+git submodule update
+```
+
+If you
+
 ## Contribution
 
 Anyone is welcome to contribute to this project. To do so, please fork this repository and create

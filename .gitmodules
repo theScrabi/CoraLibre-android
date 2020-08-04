@@ -1,0 +1,3 @@
+[submodule "CoraLibre-android-sdk"]
+	path = CoraLibre-android-sdk
+	url = https://github.com/CoraLibre/CoraLibre-android-sdk.git

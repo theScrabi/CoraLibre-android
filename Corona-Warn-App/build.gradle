@@ -31,7 +31,7 @@ android {
 
     defaultConfig {
         applicationId 'de.rki.coronawarnapp'
-        minSdkVersion 23
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 34
         versionName "1.1.1"
@@ -264,7 +264,7 @@ dependencies {
     debugImplementation 'androidx.fragment:fragment-testing:1.2.4'
 
     // CoraLibre sdk including the FOSS EN service reimplementation
-    implementation 'DP3T-SDK:sdk'
+    implementation 'CoraLibre:sdk'
 
     // HTTP
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
