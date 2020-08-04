@@ -5,7 +5,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.work.Data
 import androidx.work.OneTimeWorkRequest
-import androidx.work.workManager
+import androidx.work.WorkManager
 import de.rki.coronawarnapp.exception.ExceptionCategory.INTERNAL
 import de.rki.coronawarnapp.exception.NoTokenException
 import de.rki.coronawarnapp.exception.WrongReceiverException
