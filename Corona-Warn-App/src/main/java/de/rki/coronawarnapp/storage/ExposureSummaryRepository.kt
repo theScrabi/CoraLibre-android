@@ -35,7 +35,7 @@ class ExposureSummaryRepository(private val exposureSummaryDao: ExposureSummaryD
             this.maximumRiskScore = exposureSummary.maximumRiskScore
             this.summationRiskScore = exposureSummary.summationRiskScore
             this.attenuationDurationsInMinutes =
-                exposureSummary.attenuationDurationsInMinutes.toTypedArray().toList()
+                exposureSummary.attenuationDurations.toTypedArray().toList()
         }.run {
             exposureSummaryDao.insertExposureSummaryEntity(this)
             ExposureSummaryRepository.matchedKeyCount.postValue(matchedKeyCount)

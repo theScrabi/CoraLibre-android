@@ -79,7 +79,7 @@ class ExposureSummaryRepositoryTest {
         */
 
         val es = ExposureSummary()
-        es.attenuationDurationsInMinutes = intArrayOf(0)
+        es.attenuationDurations = intArrayOf(0)
         es.daysSinceLastExposure = 1
         es.matchedKeyCount = 1
         es.maximumRiskScore = 0
