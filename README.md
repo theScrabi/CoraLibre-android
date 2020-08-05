@@ -29,8 +29,6 @@ If your local submodule content is outdated:
 git submodule update
 ```
 
-If you
-
 ## Contribution
 
 Anyone is welcome to contribute to this project. To do so, please fork this repository and create
