@@ -45,7 +45,32 @@ most discussions take place.
 
 Upstream changes are regularly incorporated using git merges. The `master` branch of this repo
 tracks the `master` branch of the upstream repository, because that branch contains the most stable
-code and should generally always be tested for release by SAP.
+code and is presumably always be tested for release by SAP.
+
+Upstream merges will be merged by @BjoernPetersen shortly after new non-RC releases are published
+in the [corona-warn-app/cwa-app-android repo](https://github.com/corona-warn-app/cwa-app-android).
+
+### Merge checklist
+
+The exact upstream merge process may vary wildly depending on the disruptivity of the changes to
+be merged, but this section will roughly outline the merge process.
+
+#### Prerequisites
+
+- git remote `upstream` is set to `https://github.com/corona-warn-app/cwa-app-android.git`
+- Active branch is `master` with no unstaged changes
+
+#### Steps
+
+- Fetch the newest commits from upstream: `git fetch upstream`
+- Initialize the merge without auto-committing: `git merge --no-commit --no-ff upstream/master`
+- Solve possible merge conflicts, prefer upstream changes
+- Find and replace any possible (new) occurrences of "Corona-Warn-App" or just "Corona-Warn"
+- Make sure to remove any reference to RKI endorsement or this being the official app
+- Make sure there no instances of the Corona-Warn-App logo anywhere in the project
+- Stage your changes: `git add -A`
+- Commit the merge: `git commit`
+- Push to origin: `git push`
 
 ## Licensing
 
