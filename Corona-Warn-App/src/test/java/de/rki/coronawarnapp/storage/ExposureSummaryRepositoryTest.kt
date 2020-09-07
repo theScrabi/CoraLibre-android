@@ -1,17 +1,24 @@
 package de.rki.coronawarnapp.storage
 
+<<<<<<< HEAD
+=======
+import com.google.android.gms.nearby.exposurenotification.ExposureSummary
+import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
+>>>>>>> upstream/master
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockk
+import io.mockk.mockkObject
 import io.mockk.unmockkAll
 import kotlinx.coroutines.runBlocking
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
+import java.util.UUID
 
 /**
  * ExposureSummaryRepository test.
@@ -26,6 +33,10 @@ class ExposureSummaryRepositoryTest {
     fun setUp() {
         MockKAnnotations.init(this)
         repository = ExposureSummaryRepository(dao)
+
+        mockkObject(InternalExposureNotificationClient)
+        coEvery { InternalExposureNotificationClient.asyncGetExposureSummary(any()) } returns buildSummary()
+        coEvery { InternalExposureNotificationClient.asyncIsEnabled() } returns true
 
         coEvery { dao.getExposureSummaryEntities() } returns listOf()
         coEvery { dao.getLatestExposureSummary() } returns null
@@ -52,10 +63,11 @@ class ExposureSummaryRepositoryTest {
     @Test
     fun testGetLatest() {
         runBlocking {
-            repository.getLatestExposureSummary()
+            val token = UUID.randomUUID().toString()
+            repository.getLatestExposureSummary(token)
 
             coVerify {
-                dao.getLatestExposureSummary()
+                InternalExposureNotificationClient.asyncGetExposureSummary(token)
             }
         }
     }
@@ -94,6 +106,22 @@ class ExposureSummaryRepositoryTest {
                 dao.insertExposureSummaryEntity(any())
             }
         }
+    }
+
+    private fun buildSummary(
+        maxRisk: Int = 0,
+        lowAttenuation: Int = 0,
+        midAttenuation: Int = 0,
+        highAttenuation: Int = 0
+    ): ExposureSummary {
+        val intArray = IntArray(3)
+        intArray[0] = lowAttenuation
+        intArray[1] = midAttenuation
+        intArray[2] = highAttenuation
+        return ExposureSummary.ExposureSummaryBuilder()
+            .setMaximumRiskScore(maxRisk)
+            .setAttenuationDurations(intArray)
+            .build()
     }
 
     @After

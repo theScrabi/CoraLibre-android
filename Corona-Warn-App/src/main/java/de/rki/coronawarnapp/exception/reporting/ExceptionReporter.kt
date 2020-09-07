@@ -6,9 +6,6 @@ import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.R
 import de.rki.coronawarnapp.exception.ExceptionCategory
 import org.coralibre.android.sdk.fakegms.common.api.ApiException
-// This import is obsolete with CoraLibre, but left here commented out for the purpose of
-// documentation.
-// import de.rki.coronawarnapp.exception.reporting.ReportingConstants.STATUS_CODE_GOOGLE_UPDATE_NEEDED
 import java.io.PrintWriter
 import java.io.StringWriter
 
@@ -36,12 +33,8 @@ fun Throwable.report(
     // override the message with a generic one if it is an ApiException
     if (this is ApiException) {
 
-        var errorMessage = R.string.errors_communication_with_api
+        val errorMessage = R.string.errors_communication_with_api
 
-        // Change introduced with CoraLibre:
-        // if (this.statusCode == STATUS_CODE_GOOGLE_UPDATE_NEEDED) {
-        //     errorMessage = R.string.errors_google_update_needed
-        // }
         // I use the intent's putExtra(...) method to add the exception message to the errorMessage
         // string, to have as much information as possible (see below).
         // TODO: Add statusCode field to ApiException, implement proper mapping from status
