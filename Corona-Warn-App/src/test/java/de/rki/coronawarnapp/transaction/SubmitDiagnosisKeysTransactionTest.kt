@@ -1,12 +1,8 @@
 package de.rki.coronawarnapp.transaction
 
 import KeyExportFormat
-<<<<<<< HEAD
-=======
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.http.WebRequestBuilder
 import de.rki.coronawarnapp.http.playbook.BackgroundNoise
->>>>>>> upstream/master
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
 import de.rki.coronawarnapp.service.submission.SubmissionService
 import de.rki.coronawarnapp.storage.LocalData
