@@ -1,10 +1,6 @@
 package de.rki.coronawarnapp.storage
 
-<<<<<<< HEAD
-=======
-import com.google.android.gms.nearby.exposurenotification.ExposureSummary
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
->>>>>>> upstream/master
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.coVerify
