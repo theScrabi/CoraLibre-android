@@ -146,6 +146,9 @@ class TestForAPIFragment : Fragment(), InternalExposureNotificationPermissionHel
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        qrPager = qr_code_viewpager
+        qrPagerAdapter = QRPagerAdapter()
+        qrPager.adapter = qrPagerAdapter
         // Changes with CoraLibre:
         // Since we do not use google play services, the version is set to -1, instead of
         // performing a version check.
@@ -165,10 +168,6 @@ class TestForAPIFragment : Fragment(), InternalExposureNotificationPermissionHel
             InternalExposureNotificationPermissionHelper(this, this)
 
         getExposureKeys()
-
-        qrPager = qr_code_viewpager
-        qrPagerAdapter = QRPagerAdapter()
-        qrPager.adapter = qrPagerAdapter
 
         button_api_test_start.setOnClickListener {
             start()
