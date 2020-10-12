@@ -199,7 +199,7 @@ android {
 
 }
 
-task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceReleaseUnitTest') {
+task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceSdkApiReleaseUnitTest') {
     group = "Reporting"
     description = "Generate Jacoco coverage reports for the DeviceRelease build."
 
@@ -207,7 +207,7 @@ task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceRel
         html.enabled = false
         xml {
             enabled = true
-            destination file("$buildDir/reports/jacoco/deviceRelease/jacoco.xml")
+            destination file("$buildDir/reports/jacoco/deviceSdkApiRelease/jacoco.xml")
         }
     }
 
@@ -222,10 +222,10 @@ task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceRel
     ]
 
     def classPaths = [
-        "**/intermediates/classes/deviceRelease/**",
-        "**/intermediates/javac/deviceRelease/*/classes/**", // Android Gradle Plugin 3.2.x support.
-        "**/intermediates/javac/deviceRelease/classes/**", // Android Gradle Plugin 3.4 and 3.5 support.
-        "**/tmp/kotlin-classes/deviceRelease/**"
+        "**/intermediates/classes/deviceReleaseSdkApi/**",
+        "**/intermediates/javac/deviceReleaseSdkApi/*/classes/**", // Android Gradle Plugin 3.2.x support.
+        "**/intermediates/javac/deviceReleaseSdkApi/classes/**", // Android Gradle Plugin 3.4 and 3.5 support.
+        "**/tmp/kotlin-classes/deviceReleaseSdkApi/**"
     ]
 
     def debugTree = fileTree(dir: "$buildDir", includes: classPaths, excludes: excludes)
