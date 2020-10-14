@@ -1,20 +1,14 @@
 package de.rki.coronawarnapp.storage
 
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
-import io.mockk.MockKAnnotations
-import io.mockk.coEvery
-import io.mockk.coVerify
-import io.mockk.every
+import io.mockk.*
 import io.mockk.impl.annotations.MockK
-import io.mockk.mockk
-import io.mockk.mockkObject
-import io.mockk.unmockkAll
 import kotlinx.coroutines.runBlocking
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
 import org.junit.After
 import org.junit.Before
 import org.junit.Test
-import java.util.UUID
+import java.util.*
 
 /**
  * ExposureSummaryRepository test.
@@ -86,12 +80,13 @@ class ExposureSummaryRepositoryTest {
         every { es.summationRiskScore } returns 0
         */
 
-        val es = ExposureSummary()
-        es.attenuationDurations = intArrayOf(0)
-        es.daysSinceLastExposure = 1
-        es.matchedKeyCount = 1
-        es.maximumRiskScore = 0
-        es.summationRiskScore = 0
+        val es = ExposureSummary.ExposureSummaryBuilder()
+            .setAttenuationDurations(intArrayOf(0))
+            .setDaysSinceLastExposure(1)
+            .setMatchedKeyCount(1)
+            .setMaximumRiskScore(0)
+            .setSummationRiskScore(0)
+            .build()
 
         // End of workaround
 

@@ -87,8 +87,15 @@ android {
     }
 
     // One version contains our Test Fragments
-    flavorDimensions "version"
+    flavorDimensions "version", "api"
     productFlavors {
+        sdkApi {
+            dimension "api"
+        }
+        mockApi {
+            dimension "api"
+            applicationIdSuffix '.mockapi'
+        }
         device {
             dimension "version"
             buildConfigField "String", "BUILD_VARIANT", "\"device\""
@@ -165,6 +172,16 @@ android {
     }
 
     sourceSets {
+        sdkApi {
+            kotlin {
+                srcDirs = ['src/sdkApi']
+            }
+        }
+        mockApi {
+            kotlin {
+                srcDirs = ['src/mockApi']
+            }
+        }
         deviceForTesters {
             kotlin {
                 srcDirs = ['src/deviceForTesters']
@@ -182,7 +199,7 @@ android {
 
 }
 
-task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceReleaseUnitTest') {
+task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceSdkApiReleaseUnitTest') {
     group = "Reporting"
     description = "Generate Jacoco coverage reports for the DeviceRelease build."
 
@@ -190,7 +207,7 @@ task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceRel
         html.enabled = false
         xml {
             enabled = true
-            destination file("$buildDir/reports/jacoco/deviceRelease/jacoco.xml")
+            destination file("$buildDir/reports/jacoco/deviceSdkApiRelease/jacoco.xml")
         }
     }
 
@@ -205,10 +222,10 @@ task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceRel
     ]
 
     def classPaths = [
-        "**/intermediates/classes/deviceRelease/**",
-        "**/intermediates/javac/deviceRelease/*/classes/**", // Android Gradle Plugin 3.2.x support.
-        "**/intermediates/javac/deviceRelease/classes/**", // Android Gradle Plugin 3.4 and 3.5 support.
-        "**/tmp/kotlin-classes/deviceRelease/**"
+        "**/intermediates/classes/deviceReleaseSdkApi/**",
+        "**/intermediates/javac/deviceReleaseSdkApi/*/classes/**", // Android Gradle Plugin 3.2.x support.
+        "**/intermediates/javac/deviceReleaseSdkApi/classes/**", // Android Gradle Plugin 3.4 and 3.5 support.
+        "**/tmp/kotlin-classes/deviceReleaseSdkApi/**"
     ]
 
     def debugTree = fileTree(dir: "$buildDir", includes: classPaths, excludes: excludes)
@@ -217,6 +234,10 @@ task jacocoTestReportDeviceRelease(type: JacocoReport, dependsOn: 'testDeviceRel
     getSourceDirectories().from(files([mainSrc]))
     getClassDirectories().from(files([debugTree]))
     getExecutionData().from(fileTree(dir: "$buildDir", includes: ["jacoco/testDeviceReleaseUnitTest.exec"]))
+}
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 30, 'seconds'
 }
 
 dependencies {
@@ -263,8 +284,9 @@ dependencies {
     debugImplementation 'androidx.fragment:fragment-testing:1.2.4'
 
     // CoraLibre sdk including the FOSS EN service reimplementation
-    implementation('com.github.CoraLibre:CoraLibre-android-sdk:592ec0093d08a0fb276150c45ecfe309f4a694d9') {
+    implementation('com.github.CoraLibre:CoraLibre-android-sdk:master-SNAPSHOT') {
         exclude group: 'com.google.protobuf', module: 'protobuf-java'
+        changing = true
     }
 
     // HTTP
