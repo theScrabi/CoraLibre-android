@@ -76,7 +76,7 @@ jobs:
           ndk-version: "android-ndk-r21c"
       - run-gradle-cmd:
           desc: Quick Build
-          cmd: "assembleDeviceRelease"
+          cmd: "assembleDeviceReleaseSdkApi"
       - save-gradle-cache
       - save-android-build-cache
       - store_artifacts:
@@ -95,7 +95,7 @@ jobs:
           ndk-version: "android-ndk-r21c"
       - run-gradle-cmd:
           desc: Quick Build
-          cmd: ":Corona-Warn-App:assembleDeviceForTestersRelease"
+          cmd: ":Corona-Warn-App:assembleDeviceForTestersReleaseSdkApi"
       - save-gradle-cache
       - save-android-build-cache
       - store_artifacts:
@@ -111,7 +111,7 @@ jobs:
       - restore-android-build-cache
       - run-gradle-cmd-test-splitting:
           desc: Unit tests
-          cmd: ":Corona-Warn-App:testDeviceReleaseUnitTest -i"
+          cmd: ":Corona-Warn-App:testDeviceReleaseSdkApiUnitTest -i"
       - save-gradle-cache
       - save-android-build-cache
       - store_artifacts:
@@ -133,7 +133,7 @@ jobs:
       - restore-android-build-cache
       - run-gradle-cmd-test-splitting:
           desc: Unit tests with splitting
-          cmd: ":Corona-Warn-App:testDeviceForTestersReleaseUnitTest"
+          cmd: ":Corona-Warn-App:testDeviceForTestersReleaseSdkApiUnitTest"
       - save-gradle-cache
       - save-android-build-cache
       - store_artifacts:
@@ -149,8 +149,8 @@ jobs:
       - restore-gradle-cache
       - restore-android-build-cache
       - run-gradle-cmd:
-          desc: Lint check deviceRelease
-          cmd: ":Corona-Warn-App:lintDeviceRelease -i"
+          desc: Lint check deviceReleaseSdkApi
+          cmd: ":Corona-Warn-App:lintDeviceReleaseSdkApi -i"
       - store_artifacts:
           path: Corona-Warn-App/build/reports
           destination: reports
@@ -162,8 +162,8 @@ jobs:
       - restore-gradle-cache
       - restore-android-build-cache
       - run-gradle-cmd:
-          desc: Ktlint check deviceRelease
-          cmd: ":Corona-Warn-App:ktlintDeviceReleaseCheck"
+          desc: Ktlint check deviceReleaseSdkApi
+          cmd: ":Corona-Warn-App:ktlintDeviceReleaseSdkApiCheck"
       - store_artifacts:
           path: Corona-Warn-App/build/reports
           destination: reports
@@ -175,8 +175,8 @@ jobs:
       - restore-gradle-cache
       - restore-android-build-cache
       - run-gradle-cmd:
-          desc: Lint check deviceForTestersRelease
-          cmd: ":Corona-Warn-App:lintDeviceForTestersRelease -i"
+          desc: Lint check deviceForTestersReleaseSdkApi
+          cmd: ":Corona-Warn-App:lintDeviceForTestersReleaseSdkApi -i"
       - store_artifacts:
           path: Corona-Warn-App/build/reports
           destination: reports
@@ -188,8 +188,8 @@ jobs:
       - restore-gradle-cache
       - restore-android-build-cache
       - run-gradle-cmd:
-          desc: Ktlint check deviceForTestersRelease
-          cmd: ":Corona-Warn-App:ktlintDeviceForTestersReleaseCheck"
+          desc: Ktlint check deviceForTestersReleaseSdkApi
+          cmd: ":Corona-Warn-App:ktlintDeviceForTestersReleaseSdkApiCheck"
       - store_artifacts:
           path: Corona-Warn-App/build/reports
           destination: reports
