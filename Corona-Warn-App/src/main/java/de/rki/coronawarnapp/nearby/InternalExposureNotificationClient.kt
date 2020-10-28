@@ -153,4 +153,5 @@ object InternalExposureNotificationClient {
 private val ExposureNotificationClient.version: Task<Long>
     get() = Tasks.forResult(1)
 
+@Suppress("FunctionOnlyReturningConstant")
 private fun ExposureNotificationClient.deviceSupportsLocationlessScanning(): Boolean = true
