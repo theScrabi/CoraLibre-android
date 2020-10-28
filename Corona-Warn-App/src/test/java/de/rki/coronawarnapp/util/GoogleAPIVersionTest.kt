@@ -1,8 +1,5 @@
 package de.rki.coronawarnapp.util
 
-import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.common.api.CommonStatusCodes.API_NOT_CONNECTED
-import com.google.android.gms.common.api.Status
 import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
 import io.kotest.matchers.shouldBe
 import io.mockk.Called
@@ -12,6 +9,8 @@ import io.mockk.mockkObject
 import io.mockk.unmockkObject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runBlockingTest
+import org.coralibre.android.sdk.fakegms.common.api.ApiException
+import org.coralibre.android.sdk.fakegms.common.api.Status
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -60,16 +59,6 @@ internal class GoogleAPIVersionTest {
             coVerify {
                 InternalExposureNotificationClient.getVersion() wasNot Called
             }
-        }
-    }
-
-    @Test
-    fun `isAbove API v16 false when APIException for too low version`() {
-        coEvery { InternalExposureNotificationClient.getVersion() } throws
-                ApiException(Status(API_NOT_CONNECTED))
-
-        runBlockingTest {
-            classUnderTest.isAtLeast(GoogleAPIVersion.V16) shouldBe false
         }
     }
 }

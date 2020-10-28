@@ -1,8 +1,8 @@
 package de.rki.coronawarnapp.submission
 
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import de.rki.coronawarnapp.server.protocols.KeyExportFormat
 import de.rki.coronawarnapp.util.TimeStamper
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
 import org.junit.Assert

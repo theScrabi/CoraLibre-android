@@ -2,7 +2,6 @@ package de.rki.coronawarnapp.test.risklevel.ui
 
 import android.content.Context
 import androidx.lifecycle.SavedStateHandle
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationClient
 import de.rki.coronawarnapp.diagnosiskeys.storage.KeyCacheRepository
 import de.rki.coronawarnapp.nearby.ENFClient
 import de.rki.coronawarnapp.transaction.RetrieveDiagnosisKeysTransaction
@@ -17,6 +16,7 @@ import io.mockk.every
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockkObject
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test

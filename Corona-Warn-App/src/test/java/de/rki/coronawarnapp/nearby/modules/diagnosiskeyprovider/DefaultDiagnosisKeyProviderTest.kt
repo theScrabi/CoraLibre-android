@@ -2,10 +2,6 @@
 
 package de.rki.coronawarnapp.nearby.modules.diagnosiskeyprovider
 
-import com.google.android.gms.nearby.exposurenotification.ExposureConfiguration
-import com.google.android.gms.nearby.exposurenotification.ExposureNotificationClient
-import com.google.android.gms.tasks.OnSuccessListener
-import com.google.android.gms.tasks.Task
 import de.rki.coronawarnapp.util.GoogleAPIVersion
 import io.mockk.MockKAnnotations
 import io.mockk.clearAllMocks
@@ -15,6 +11,10 @@ import io.mockk.every
 import io.mockk.impl.annotations.MockK
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
+import org.coralibre.android.sdk.fakegms.tasks.OnSuccessListener
+import org.coralibre.android.sdk.fakegms.tasks.Task
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
