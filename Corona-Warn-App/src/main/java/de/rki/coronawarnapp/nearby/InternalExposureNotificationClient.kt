@@ -5,15 +5,16 @@ import de.rki.coronawarnapp.risk.TimeVariables
 import de.rki.coronawarnapp.storage.LocalData
 import de.rki.coronawarnapp.storage.tracing.TracingIntervalRepository
 import de.rki.coronawarnapp.util.TimeAndDateExtensions.millisecondsToSeconds
-import java.io.File
+import de.rki.coronawarnapp.util.di.AppInjector
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
+import org.coralibre.android.sdk.fakegms.tasks.Task
+import org.coralibre.android.sdk.fakegms.tasks.Tasks
 import java.util.Date
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.coroutines.suspendCoroutine
-import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
-import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration.ExposureConfigurationBuilder
-import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
-import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 
 /**
  * Wrapper class for the Exposure Notification Client in the com.google.android.gms.nearby.Nearby
@@ -23,7 +24,7 @@ object InternalExposureNotificationClient {
 
     // reference to the client from the Google framework with the given application context
     private val exposureNotificationClient by lazy {
-        ExposureNotificationClientFactory.createClient()
+        AppInjector.component.enfClient.internalClient
     }
 
     /****************************************************
@@ -91,29 +92,8 @@ object InternalExposureNotificationClient {
             }
     }
 
-    /**
-     * Takes an ExposureConfiguration object. Inserts a list of files that contain key
-     * information into the on-device database. Provide the keys of confirmed cases retrieved
-     * from your internet-accessible server to the Google Play service once requested from the
-     * API. Information about the file format is in the Exposure Key Export File Format and
-     * Verification document that is linked from google.com/covid19/exposurenotifications.
-     *
-     * @param keyFiles
-     * @param configuration
-     * @param token
-     * @return
-     */
-    suspend fun asyncProvideDiagnosisKeys(
-        keyFiles: Collection<File>,
-        configuration: ExposureConfiguration?,
-        token: String
-    ): Void = suspendCoroutine { cont ->
-        val exposureConfiguration = configuration ?: ExposureConfigurationBuilder().build()
-        exposureNotificationClient.provideDiagnosisKeys(
-            keyFiles.toList(),
-            exposureConfiguration,
-            token
-        )
+    suspend fun getVersion(): Long = suspendCoroutine { cont ->
+        exposureNotificationClient.version
             .addOnSuccessListener {
                 cont.resume(it)
             }.addOnFailureListener {
@@ -159,4 +139,18 @@ object InternalExposureNotificationClient {
                     cont.resumeWithException(it)
                 }
         }
+
+    /**
+     * Indicates if device supports scanning without location service
+     *
+     * @return
+     */
+    fun deviceSupportsLocationlessScanning() =
+        exposureNotificationClient.deviceSupportsLocationlessScanning()
 }
+
+// TODO: should both be part of CoraLibre ExposureNotificationClient interface
+private val ExposureNotificationClient.version: Task<Long>
+    get() = Tasks.forResult(1)
+
+private fun ExposureNotificationClient.deviceSupportsLocationlessScanning(): Boolean = true

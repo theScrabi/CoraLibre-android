@@ -1,12 +1,15 @@
 package de.rki.coronawarnapp.ui.viewmodel
 
+import android.view.View
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.exception.ExceptionCategory.INTERNAL
 import de.rki.coronawarnapp.exception.TransactionException
 import de.rki.coronawarnapp.exception.reporting.report
+import de.rki.coronawarnapp.risk.RiskLevelConstants
 import de.rki.coronawarnapp.storage.ExposureSummaryRepository
 import de.rki.coronawarnapp.storage.LocalData
 import de.rki.coronawarnapp.storage.RiskLevelRepository
@@ -14,7 +17,9 @@ import de.rki.coronawarnapp.storage.TracingRepository
 import de.rki.coronawarnapp.timer.TimerHelper
 import de.rki.coronawarnapp.transaction.RetrieveDiagnosisKeysTransaction
 import de.rki.coronawarnapp.transaction.RiskLevelTransaction
+import de.rki.coronawarnapp.ui.riskdetails.DefaultRiskDetailPresenter
 import de.rki.coronawarnapp.util.ConnectivityHelper
+import de.rki.coronawarnapp.util.ui.SingleLiveEvent
 import kotlinx.coroutines.launch
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
@@ -37,6 +42,8 @@ class TracingViewModel : ViewModel() {
         val TAG: String? = TracingViewModel::class.simpleName
     }
 
+    private val riskDetailPresenter = DefaultRiskDetailPresenter()
+
     // Values from RiskLevelRepository
     val riskLevel: LiveData<Int> = RiskLevelRepository.riskLevelScore
     val riskLevelScoreLastSuccessfulCalculated =
@@ -52,6 +59,55 @@ class TracingViewModel : ViewModel() {
     val isTracingEnabled: LiveData<Boolean?> = TracingRepository.isTracingEnabled
     val activeTracingDaysInRetentionPeriod = TracingRepository.activeTracingDaysInRetentionPeriod
     var isRefreshing: LiveData<Boolean> = TracingRepository.isRefreshing
+
+    val additionalInformationVisibility = MediatorLiveData<Int>()
+    val informationBodyNoticeVisibility = MediatorLiveData<Int>()
+
+    // event for interoperability navigation
+    val navigateToInteroperability = SingleLiveEvent<Boolean>()
+
+    init {
+        additionalInformationVisibility.addSource(riskLevel) {
+            additionalInformationVisibility.value =
+                if (riskDetailPresenter.isAdditionalInfoVisible(it, matchedKeyCount.value ?: -1))
+                    View.VISIBLE
+                else
+                    View.GONE
+        }
+        additionalInformationVisibility.addSource(matchedKeyCount) {
+            additionalInformationVisibility.value =
+                if (riskDetailPresenter.isAdditionalInfoVisible(
+                        riskLevel.value ?: RiskLevelConstants.UNKNOWN_RISK_INITIAL,
+                        it ?: 0
+                    )
+                )
+                    View.VISIBLE
+                else
+                    View.GONE
+        }
+        informationBodyNoticeVisibility.addSource(riskLevel) {
+            informationBodyNoticeVisibility.value =
+                if (riskDetailPresenter.isInformationBodyNoticeVisible(
+                        it,
+                        matchedKeyCount.value ?: -1
+                    )
+                )
+                    View.VISIBLE
+                else
+                    View.GONE
+        }
+        informationBodyNoticeVisibility.addSource(matchedKeyCount) {
+            informationBodyNoticeVisibility.value =
+                if (riskDetailPresenter.isInformationBodyNoticeVisible(
+                        riskLevel.value ?: RiskLevelConstants.UNKNOWN_RISK_INITIAL,
+                        it ?: 0
+                    )
+                )
+                    View.VISIBLE
+                else
+                    View.GONE
+        }
+    }
 
     /**
      * Launches the RetrieveDiagnosisKeysTransaction and RiskLevelTransaction in the viewModel scope
@@ -73,7 +129,7 @@ class TracingViewModel : ViewModel() {
                 // check if the keys were not already retrieved today
                 val keysWereNotRetrievedToday =
                     LocalData.lastTimeDiagnosisKeysFromServerFetch() == null ||
-                            currentDate.withTimeAtStartOfDay() != lastFetch.withTimeAtStartOfDay()
+                        currentDate.withTimeAtStartOfDay() != lastFetch.withTimeAtStartOfDay()
 
                 // check if the network is enabled to make the server fetch
                 val isNetworkEnabled =
@@ -84,9 +140,9 @@ class TracingViewModel : ViewModel() {
                 val isBackgroundJobEnabled =
                     ConnectivityHelper.autoModeEnabled(CoronaWarnApplication.getAppContext())
 
-                Timber.v("Keys were not retrieved today $keysWereNotRetrievedToday")
-                Timber.v("Network is enabled $isNetworkEnabled")
-                Timber.v("Background jobs are enabled $isBackgroundJobEnabled")
+                Timber.tag(TAG).v("Keys were not retrieved today $keysWereNotRetrievedToday")
+                Timber.tag(TAG).v("Network is enabled $isNetworkEnabled")
+                Timber.tag(TAG).v("Background jobs are enabled $isBackgroundJobEnabled")
 
                 if (keysWereNotRetrievedToday && isNetworkEnabled && isBackgroundJobEnabled) {
                     TracingRepository.isRefreshing.value = true
@@ -163,7 +219,7 @@ class TracingViewModel : ViewModel() {
                     ExposureSummaryRepository.getExposureSummaryRepository()
                         .getLatestExposureSummary(token)
                 }
-                Timber.v("retrieved latest exposure summary from db")
+                Timber.tag(TAG).v("retrieved latest exposure summary from db")
             } catch (e: Exception) {
                 e.report(
                     de.rki.coronawarnapp.exception.ExceptionCategory.EXPOSURENOTIFICATION,
@@ -187,5 +243,9 @@ class TracingViewModel : ViewModel() {
 
     fun refreshLastSuccessfullyCalculatedScore() {
         RiskLevelRepository.refreshLastSuccessfullyCalculatedScore()
+    }
+
+    fun onInteroperabilitySettingPressed() {
+        navigateToInteroperability.postValue(true)
     }
 }

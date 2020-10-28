@@ -1,12 +1,12 @@
 package de.rki.coronawarnapp.service.applicationconfiguration
 
-import de.rki.coronawarnapp.http.WebRequestBuilder
 import de.rki.coronawarnapp.server.protocols.ApplicationConfigurationOuterClass.ApplicationConfiguration
+import de.rki.coronawarnapp.util.di.AppInjector
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
 
 object ApplicationConfigurationService {
     suspend fun asyncRetrieveApplicationConfiguration(): ApplicationConfiguration {
-        return WebRequestBuilder.getInstance().asyncGetApplicationConfigurationFromServer()
+        return AppInjector.component.appConfigProvider.getAppConfig()
     }
 
     suspend fun asyncRetrieveExposureConfiguration(): ExposureConfiguration =

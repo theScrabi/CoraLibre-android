@@ -5,6 +5,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import de.rki.coronawarnapp.CoronaWarnApplication
 import de.rki.coronawarnapp.R
 import de.rki.coronawarnapp.exception.ExceptionCategory
+import de.rki.coronawarnapp.util.tryFormattedError
 import org.coralibre.android.sdk.fakegms.common.api.ApiException
 import java.io.PrintWriter
 import java.io.StringWriter
@@ -17,11 +18,13 @@ fun Throwable.report(
     prefix: String?,
     suffix: String?
 ) {
+    val context = CoronaWarnApplication.getAppContext()
+
     val intent = Intent(ReportingConstants.ERROR_REPORT_LOCAL_BROADCAST_CHANNEL)
     intent.putExtra(ReportingConstants.ERROR_REPORT_CATEGORY_EXTRA, exceptionCategory.name)
     intent.putExtra(ReportingConstants.ERROR_REPORT_PREFIX_EXTRA, prefix)
     intent.putExtra(ReportingConstants.ERROR_REPORT_SUFFIX_EXTRA, suffix)
-    intent.putExtra(ReportingConstants.ERROR_REPORT_MESSAGE_EXTRA, this.message)
+    intent.putExtra(ReportingConstants.ERROR_REPORT_MESSAGE_EXTRA, this.tryFormattedError(context))
 
     if (this is ReportedExceptionInterface) {
         intent.putExtra(ReportingConstants.ERROR_REPORT_CODE_EXTRA, this.code)
@@ -61,7 +64,7 @@ fun Throwable.report(
     }
 
     intent.putExtra(ReportingConstants.ERROR_REPORT_STACK_EXTRA, stackExtra)
-    LocalBroadcastManager.getInstance(CoronaWarnApplication.getAppContext()).sendBroadcast(intent)
+    LocalBroadcastManager.getInstance(context).sendBroadcast(intent)
 }
 
 fun reportGeneric(
