@@ -64,7 +64,6 @@ import de.rki.coronawarnapp.util.viewmodel.cwaViewModels
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
