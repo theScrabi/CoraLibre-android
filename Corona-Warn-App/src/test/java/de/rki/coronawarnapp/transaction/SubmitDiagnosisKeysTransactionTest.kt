@@ -1,19 +1,11 @@
 package de.rki.coronawarnapp.transaction
 
-<<<<<<< HEAD
-import KeyExportFormat
-import de.rki.coronawarnapp.http.WebRequestBuilder
-import de.rki.coronawarnapp.http.playbook.BackgroundNoise
-import de.rki.coronawarnapp.nearby.InternalExposureNotificationClient
-=======
-import com.google.android.gms.nearby.exposurenotification.TemporaryExposureKey
 import com.google.protobuf.ByteString
 import de.rki.coronawarnapp.appconfig.AppConfigProvider
 import de.rki.coronawarnapp.playbook.BackgroundNoise
 import de.rki.coronawarnapp.playbook.Playbook
 import de.rki.coronawarnapp.server.protocols.ApplicationConfigurationOuterClass.ApplicationConfiguration
 import de.rki.coronawarnapp.server.protocols.KeyExportFormat
->>>>>>> upstream/master
 import de.rki.coronawarnapp.service.submission.SubmissionService
 import de.rki.coronawarnapp.storage.LocalData
 import de.rki.coronawarnapp.submission.ExposureKeyHistoryCalculations
@@ -32,19 +24,11 @@ import io.mockk.impl.annotations.MockK
 import io.mockk.just
 import io.mockk.mockkObject
 import kotlinx.coroutines.runBlocking
-<<<<<<< HEAD
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
-import org.hamcrest.CoreMatchers.`is`
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.After
-import org.junit.Before
-import org.junit.Test
-=======
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.time.Instant
->>>>>>> upstream/master
 
 class SubmitDiagnosisKeysTransactionTest {
 
@@ -193,4 +177,11 @@ class SubmitDiagnosisKeysTransactionTest {
             }
         }
     }
+}
+
+// TODO should be part of CoraLibre API
+fun TemporaryExposureKey.TemporaryExposureKeyBuilder.setDaysSinceOnsetOfSymptoms(
+    days: Int
+): TemporaryExposureKey.TemporaryExposureKeyBuilder {
+    return this
 }
