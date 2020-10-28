@@ -5,7 +5,6 @@ import dagger.Module
 import dagger.Provides
 import de.rki.coronawarnapp.nearby.modules.diagnosiskeyprovider.DefaultDiagnosisKeyProvider
 import de.rki.coronawarnapp.nearby.modules.diagnosiskeyprovider.DiagnosisKeyProvider
-import org.coralibre.android.sdk.fakegms.nearby.Nearby
 import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
 import javax.inject.Singleton
 
