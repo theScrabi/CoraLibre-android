@@ -88,7 +88,7 @@
     <!-- XACT: menu description for screen readers -->
     <string name="accessibility_close">"Schließen"</string>
     <!-- XACT: menu description for screen readers -->
-    <string name="accessibility_logo">"CoraLibre"</string>
+    <string name="accessibility_logo">CoraLibre-App</string>
     <!-- XACT: button description for screen readers to be appended at the end of content without focusable subcontent that are explored by touch -->
     <string name="accessibility_button">"Taste"</string>
 
@@ -111,13 +111,13 @@
     <!-- NOTR -->
     <string name="notification_id"><xliff:g id="notification_id">"1"</xliff:g></string>
     <!-- XTXT: Notification channel name for os settings -->
-    <string name="notification_name">"CoraLibre"</string>
+    <string name="notification_name">CoraLibre-App</string>
     <!-- XTXT: Notification channel description for os settings -->
-    <string name="notification_description">"Benachrichtigungen aus CoraLibre"</string>
+    <string name="notification_description">Benachrichtigungen von der CoraLibre-App</string>
     <!-- XHED: Notification title -->
-    <string name="notification_headline">"CoraLibre"</string>
+    <string name="notification_headline">CoraLibre-App</string>
     <!-- XTXT: Notification body -->
-    <string name="notification_body">"Es gibt Neuigkeiten von CoraLibre."</string>
+    <string name="notification_body">Es gibt Neuigkeiten von der CoraLibre-App.</string>
 
     <!-- ####################################
               App Auto Update
@@ -126,7 +126,7 @@
     <!-- XHED: App Auto Update dialog title -->
     <string name="update_dialog_title">"Update verfügbar"</string>
     <!-- XTXT: App Auto Update dialog message -->
-    <string name="update_dialog_message">"Bitte beachten Sie: Sie können CoraLibre erst wieder benutzen, wenn Sie das neueste Update installiert haben."</string>
+    <string name="update_dialog_message">Bitte beachten Sie: Sie können die CoraLibre-App erst wieder benutzen, wenn Sie das neueste Update installiert haben.</string>
     <!-- XBUT: App Auto Update button -->
     <string name="update_dialog_button">"Update"</string>
 
@@ -217,14 +217,14 @@
     <!-- XTXT: FAQ link, should be translated  -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq"</string>
     <!-- XACT: Opens external webpage -->
-    <string name="hint_external_webpage">"Häufige Fragen, hier finden Sie Antworten auf häufig gestellte Fragen rund um CoraLibre. Sie werden auf eine externe Website weitergeleitet."</string>
+    <string name="hint_external_webpage">Häufige Fragen, hier finden Sie Antworten auf häufig gestellte Fragen rund um die Corona-Warn-App, worauf diese CoraLibre-App basiert. Sie werden auf eine externe Website weitergeleitet.</string>
 
     <!-- ####################################
                Main - Share
     ###################################### -->
 
     <!-- XHED: Share app link page title -->
-    <string name="main_share_title">"CoraLibre teilen"</string>
+    <string name="main_share_title">Die CoraLibre-App teilen</string>
     <!-- XHED: Share app link page subtitle -->
     <string name="main_share_headline">"Gemeinsam Corona bekämpfen"</string>
     <!-- YTXT: Share app link page body -->
@@ -234,7 +234,7 @@
     <!-- YMSG: Message when sharing is executed -->
     <string name="main_share_message">"Gemeinsam Corona bekämpfen"<xliff:g id="line_break">"\n"</xliff:g>"Ich bin dabei. Du auch?"<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="link_play_store">"https://www.corona-warn-app.de"</xliff:g>"\n"<xliff:g id="line_break">"\n"</xliff:g></string>
     <!-- XACT: main (share) - illustraction description, explanation image -->
-    <string name="main_share_illustration_description">"Ein Mann teilt CoraLibre mit vier anderen Personen."</string>
+    <string name="main_share_illustration_description">Ein Mann teilt die CoraLibre-App mit vier anderen Personen.</string>
 
     <!-- ####################################
                 Main - Overview
@@ -281,7 +281,7 @@
     <!-- XHED: App overview subtitle for glossary notifications -->
     <string name="main_overview_subtitle_glossary_notification">"Risiko-Benachrichtigung"</string>
     <!-- YTXT: App overview body for glossary notifications -->
-    <string name="main_overview_body_glossary_notification">"Die Anzeige von Risiko-Begegnungen in CoraLibre."</string>
+    <string name="main_overview_body_glossary_notification">Die Anzeige von Risiko-Begegnungen in der CoraLibre-App.</string>
     <!-- XHED: App overview subtitle for glossary keys -->
     <string name="main_overview_subtitle_glossary_keys">"Zufalls-ID"</string>
     <!-- YTXT: App overview body for glossary keys -->
@@ -289,7 +289,7 @@
     <!-- XACT: main (overview) - illustraction description, explanation image -->
     <string name="main_overview_illustration_description">"Ein Smartphone zeigt unterschiedliche Inhalte, die von eins bis drei nummeriert sind."</string>
     <!-- XACT: App main page title -->
-    <string name="main_title">"Hauptseite von CoraLibre"</string>
+    <string name="main_title">Hauptseite der CoraLibre-App</string>
 
     <!-- ####################################
                Risk Details
@@ -397,7 +397,7 @@
     <!-- XHED: onboarding(together) - fight corona -->
     <string name="onboarding_headline">"Gemeinsam Corona bekämpfen"</string>
     <!-- XHED: onboarding(together) - two/three line headline under an illustration -->
-    <string name="onboarding_subtitle">"Mehr Schutz für Sie und uns alle. Mit CoraLibre durchbrechen wir Infektionsketten schneller."</string>
+    <string name="onboarding_subtitle">Mehr Schutz für Sie und uns alle. Mit der CoraLibre-App durchbrechen wir Infektionsketten schneller.</string>
     <!-- YTXT: onboarding(together) - inform about the app -->
     <string name="onboarding_body">"Machen Sie Ihr Smartphone zum Corona-Warn-System. Überblicken Sie Ihren Risikostatus und erfahren Sie, ob in den letzten 14 Tagen Corona-positiv getestete Personen in ihrer Nähe waren."</string>
     <!-- YTXT: onboarding(together) - explain application -->
@@ -430,7 +430,7 @@
     <!-- XTXT: onboarding(tracing) - dialog about tracing permission declined -->
     <string name="onboarding_tracing_dialog_headline">"Berechtigung"</string>
     <!-- YMSI: onboarding(tracing) - dialog about tracing -->
-    <string name="onboarding_tracing_dialog_body">"CoraLibre kann dadurch keine Benachrichtigungen zum COVID-19-Risikostatus versenden und empfangen. Sie können die Funktion jederzeit ausschalten."</string>
+    <string name="onboarding_tracing_dialog_body">Die CoraLibre-App kann dadurch keine Benachrichtigungen zum COVID-19-Risikostatus versenden und empfangen. Sie können die Funktion jederzeit ausschalten.</string>
     <!-- XBUT: onboarding(tracing) - positive button (right) -->
     <string name="onboarding_tracing_dialog_button_positive">"Nicht aktivieren"</string>
     <!-- XBUT: onboarding(tracing) - negative button (right) -->
@@ -470,7 +470,7 @@
     <!-- XHED: onboarding(test) - about positive tests -->
     <string name="onboarding_test_headline">"Falls Sie Corona-positiv getestet werden …"</string>
     <!-- XHED: onboarding(test) - two/three line headline under an illustration -->
-    <string name="onboarding_test_subtitle">"… teilen Sie es bitte über die CoraLibre mit. Freiwillig und sicher. Für die Gesundheit aller."</string>
+    <string name="onboarding_test_subtitle">… teilen Sie es bitte über die CoraLibre-App mit. Freiwillig und sicher. Für die Gesundheit aller.</string>
     <!-- YTXT: onboarding(test) - explain test -->
     <string name="onboarding_test_body">"Ihre Mitteilung wird zuverlässig verschlüsselt über einen sicheren Server weiterverarbeitet. Die Personen, deren verschlüsselte Zufalls-IDs Sie gesammelt haben, erhalten nun eine Warnung und Informationen darüber, wie sie weiter vorgehen sollen."</string>
     <!-- XACT: onboarding(test) - illustraction description, header image -->
@@ -829,7 +829,7 @@
     <!-- XHED: Page headline for results next steps  -->
     <string name="submission_test_result_steps_added_heading">"Test erfolgreich hinzugefügt"</string>
     <!-- YTXT: Body text for for results next steps  -->
-    <string name="submission_test_result_steps_added_body">"Ihr Test wurde in CoraLibre registriert."</string>
+    <string name="submission_test_result_steps_added_body">Ihr Test wurde in der CoraLibre-App registriert.</string>
     <!-- XHED: Page headline for pending test result next steps  -->
     <string name="submission_test_result_pending_steps_waiting_heading">"Testergebnis noch nicht verfügbar"</string>
     <!-- YTXT: Body text for next steps section of waiting test result page -->
@@ -897,7 +897,7 @@
     <!-- XHED: Page title for menu at the start of the submission process  -->
     <string name="submission_intro_title">"Wurden Sie getestet?"</string>
     <!-- XHED: Page headline for menu the at start of the submission process  -->
-    <string name="submission_intro_headline">"So funktioniert das Corona-Warn-System"</string>
+    <string name="submission_intro_headline">So funktioniert die CoraLibre-App</string>
     <!-- YTXT: submission introduction text -->
     <string name="submission_intro_text">"Damit die CoraLibre-App funktioniert, sind wir auf die Mithilfe von Corona-positiv getesteten Personen angewiesen.\n\nDa nur verschlüsselte Zufalls-IDs ausgetauscht werden, bleiben Sie unerkannt. Sie können jetzt wie folgt vorgehen:"</string>
     <!-- XBUT: Submission introduction next button-->
@@ -911,7 +911,7 @@
         <item>"Wenn Sie keine TAN haben, können Sie diese telefonisch anfragen."</item>
     </string-array>
     <!-- XACT: Submission Intro page title -->
-    <string name="submission_intro_accessibility_title">"Wurden Sie getestet? So funktioniert das Corona-Warn-System"</string>
+    <string name="submission_intro_accessibility_title">Wurden Sie getestet? So funktioniert die CoraLibre-App</string>
 
     <!-- Dispatcher -->
     <!-- XHED: Page headline for dispatcher menu  -->
