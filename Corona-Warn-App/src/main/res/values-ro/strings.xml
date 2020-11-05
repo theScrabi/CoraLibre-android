@@ -209,11 +209,9 @@
     <!-- XHED: main, FAQ -->
     <string name="main_about_headline">"Întrebări frecvente"</string>
     <!-- XTXT: main, explains faq on card -->
-    <string name="main_about_body">"Aici puteți găsi răspunsuri la întrebările frecvente legate de aplicația CoraLibre. Veți fi redirecționat către un site web extern al guvernului german."</string>
     <!-- XTXT: FAQ link, should be translated  -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq-englisch"</string>
     <!-- XACT: Opens external webpage -->
-    <string name="hint_external_webpage">"Aici puteți găsi răspunsuri la întrebările frecvente legate de aplicația CoraLibre. Veți fi redirecționat către un site web extern."</string>
 
     <!-- ####################################
                Main - Share
@@ -649,7 +647,6 @@
     <!-- XHED: Subtitle for about information page -->
     <string name="information_about_headline">"Să combatem împreună COVID-19"</string>
     <!-- YTXT: Body text for about information page -->
-    <string name="information_about_body_emphasized">"Robert Koch Institute (RKI) este un organism federal de sănătate publică din Germania. RKI a publicat aplicația CoraLibre în numele Guvernului Federal. Aplicația are drept scop să completeze sub formă digitală măsurile de sănătate publică deja introduse: distanțarea socială, igiena și purtarea măștii."</string>
     <!-- YTXT: Body text for about information page -->
     <string name="information_about_body">"Persoanele care utilizează aplicația ajută la urmărirea și întreruperea lanțurilor de infectare. Aplicația salvează local, pe dispozitivul dvs., întâlnirile cu alte persoane. Sunteți notificat dacă ați întâlnit persoane care au fost diagnosticate ulterior cu COVID-19. Identitatea și confidențialitatea dvs. sunt protejate întotdeauna."</string>
     <!-- XACT: describes illustration -->

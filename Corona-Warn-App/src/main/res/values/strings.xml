@@ -219,7 +219,7 @@
     <!-- XHED: main, FAQ -->
     <string name="main_about_headline">"FAQ"</string>
     <!-- XTXT: main, explains faq on card -->
-    <string name="main_about_body">"Here you can find answers to frequently asked questions about the Corona-Warn-App, on which this app is based. You will be forwarded to an external German government website."</string>
+    <string name="main_about_body">Here you can find answers to frequently asked questions about the Corona-Warn-App, on which this CoraLibre-App is based. You will be forwarded to an external German government website.</string>
     <!-- XTXT: FAQ link, should be translated  -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq-englisch"</string>
     <!-- XACT: Opens external webpage -->

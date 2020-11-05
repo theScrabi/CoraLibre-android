@@ -209,11 +209,9 @@
     <!-- XHED: main, FAQ -->
     <string name="main_about_headline">"ЧЗВ"</string>
     <!-- XTXT: main, explains faq on card -->
-    <string name="main_about_body">"Тук можете да намерите отговори на често задавани въпроси относно приложението CoraLibre-App. Ще Ви пренасочим към външен уебсайт на правителството на Германия."</string>
     <!-- XTXT: FAQ link, should be translated  -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq-englisch"</string>
     <!-- XACT: Opens external webpage -->
-    <string name="hint_external_webpage">"Тук можете да намерите отговори на често задавани въпроси относно приложението CoraLibre-App. Ще Ви пренасочим към външен уебсайт."</string>
 
     <!-- ####################################
                Main - Share
@@ -649,7 +647,6 @@
     <!-- XHED: Subtitle for about information page -->
     <string name="information_about_headline">"Да се преборим с коронавируса заедно"</string>
     <!-- YTXT: Body text for about information page -->
-    <string name="information_about_body_emphasized">"Институтът „Роберт Кох“ (RKI) е федералната служба за обществено здравеопазване в Германия. Той е издател на приложението CoraLibre-App по поръчка на федералното правителство. Приложението е предназначено да бъде дигитално допълнение на вече въведените мерки за опазване на общественото здраве: социално дистанциране, поддържане на висока хигиена и носене на маски."</string>
     <!-- YTXT: Body text for about information page -->
     <string name="information_about_body">"Хората, които използват приложението, помагат за проследяване и прекъсване на веригите на заразяване. Приложението запазва във Вашето устройство данните за контактите Ви с други хора. Получавате известие, ако сте били в контакт с лица, които впоследствие са били диагностицирани с COVID-19. Вашата самоличност и неприкосновеността на данните Ви са защитени по всяко време."</string>
     <!-- XACT: describes illustration -->

@@ -209,11 +209,9 @@
     <!-- XHED: main, FAQ -->
     <string name="main_about_headline">"Często zadawane pytania"</string>
     <!-- XTXT: main, explains faq on card -->
-    <string name="main_about_body">"Tutaj możesz znaleźć odpowiedzi na często zadawane pytania dotyczące CoraLibre-App. Zostaniesz przekierowany(-a) na zewnętrzną stronę internetową administracji Niemiec."</string>
     <!-- XTXT: FAQ link, should be translated  -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq-englisch"</string>
     <!-- XACT: Opens external webpage -->
-    <string name="hint_external_webpage">"Tutaj możesz znaleźć odpowiedzi na często zadawane pytania dotyczące CoraLibre-App. Zostaniesz przekierowany(-a) na zewnętrzną stronę internetową."</string>
 
     <!-- ####################################
                Main - Share
@@ -649,7 +647,6 @@
     <!-- XHED: Subtitle for about information page -->
     <string name="information_about_headline">"Razem pokonajmy koronawirusa"</string>
     <!-- YTXT: Body text for about information page -->
-    <string name="information_about_body_emphasized">"Instytut Roberta Kocha (RKI) to niemiecka federalna instytucja zdrowia publicznego. RKI publikuje aplikację CoraLibre-App w imieniu rządu federalnego. Aplikacja ta służy jako cyfrowe uzupełnienie już wprowadzonych środków ochrony zdrowia publicznego, takich jak zachowanie dystansu społecznego, dbanie o higienę oraz noszenie maseczek."</string>
     <!-- YTXT: Body text for about information page -->
     <string name="information_about_body">"Osoby korzystające z aplikacji pomagają w śledzeniu i przerwaniu łańcuchów zakażeń. Aplikacja zapisuje kontakty z innymi osobami lokalnie na Twoim urządzeniu. Otrzymasz powiadomienie, jeśli okaże się, że u osób, z którymi miałeś(-aś) kontakt, zdiagnozowano później COVID-19. Twoja tożsamość i prywatność są zawsze chronione."</string>
     <!-- XACT: describes illustration -->
