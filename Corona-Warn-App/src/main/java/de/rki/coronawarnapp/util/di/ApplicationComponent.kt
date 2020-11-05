@@ -12,6 +12,7 @@ import de.rki.coronawarnapp.diagnosiskeys.download.KeyFileDownloader
 import de.rki.coronawarnapp.diagnosiskeys.storage.KeyCacheRepository
 import de.rki.coronawarnapp.environment.EnvironmentModule
 import de.rki.coronawarnapp.http.HttpModule
+import de.rki.coronawarnapp.nearby.DiagnosisKeySubmitterModule
 import de.rki.coronawarnapp.nearby.ENFClient
 import de.rki.coronawarnapp.nearby.ENFModule
 import de.rki.coronawarnapp.playbook.Playbook
@@ -46,6 +47,7 @@ import javax.inject.Singleton
         RiskModule::class,
         UtilModule::class,
         DeviceModule::class,
+        DiagnosisKeySubmitterModule::class,
         ENFModule::class,
         HttpModule::class,
         EnvironmentModule::class,

@@ -1,15 +1,24 @@
 package de.rki.coronawarnapp.nearby
 
 import android.util.Log
-import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.*
+import dagger.Module
+import dagger.Provides
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureConfiguration
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureInformation
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureNotificationClient
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.ExposureSummary
+import org.coralibre.android.sdk.fakegms.nearby.exposurenotification.TemporaryExposureKey
 import org.coralibre.android.sdk.fakegms.tasks.Task
 import org.coralibre.android.sdk.fakegms.tasks.Tasks
 import java.io.File
+import javax.inject.Singleton
 
-object ExposureNotificationClientFactory {
-    fun createClient(): ExposureNotificationClient {
-        return MockExposureNotificationClient()
-    }
+@Module
+class ENFModule {
+    @Provides
+    @Singleton
+    fun exposureNotificationClient(): ExposureNotificationClient =
+        MockExposureNotificationClient()
 }
 
 private class MockExposureNotificationClient : ExposureNotificationClient {
