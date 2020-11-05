@@ -527,7 +527,7 @@ class TestForAPIFragment : Fragment(R.layout.fragment_test_for_a_p_i),
 
         binding.labelExposureSummaryAttenuation.text = getString(
             R.string.test_api_body_attenuation,
-            (exposureSummary?.attenuationDurations?.joinToString() ?: "-").toString()
+            (exposureSummary?.attenuationDurationsInMinutes?.joinToString() ?: "-").toString()
         )
     }
 
