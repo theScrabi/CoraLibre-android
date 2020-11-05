@@ -1,7 +1,6 @@
 package de.rki.coronawarnapp.nearby
 
 import android.app.Activity
-// import android.content.IntentSender
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import de.rki.coronawarnapp.exception.ENPermissionException
