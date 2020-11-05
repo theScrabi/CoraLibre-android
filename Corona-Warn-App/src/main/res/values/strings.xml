@@ -94,7 +94,7 @@
     <!-- XACT: menu description for screen readers -->
     <string name="accessibility_close">"Close"</string>
     <!-- XACT: menu description for screen readers -->
-    <string name="accessibility_logo">CoraLibre-App</string>
+    <string name="accessibility_logo" translatable="false">CoraLibre-App</string>
     <!-- XACT: button description for screen readers to be appended at the end of content without focusable subcontent that are explored by touch -->
     <string name="accessibility_button">"Button"</string>
 
@@ -117,11 +117,11 @@
     <!-- NOTR -->
     <string name="notification_id"><xliff:g id="notification_id">"1"</xliff:g></string>
     <!-- XTXT: Notification channel name for os settings -->
-    <string name="notification_name">CoraLibre-App</string>
+    <string name="notification_name" translatable="false">CoraLibre-App</string>
     <!-- XTXT: Notification channel description for os settings -->
     <string name="notification_description">Notifications from the CoraLibre-App</string>
     <!-- XHED: Notification title -->
-    <string name="notification_headline">CoraLibre-App</string>
+    <string name="notification_headline" translatable="false">CoraLibre-App</string>
     <!-- XTXT: Notification body -->
     <string name="notification_body">You have new messages from the CoraLibre-App.</string>
 
@@ -850,7 +850,7 @@
     <!-- XHED: Page headline for negative test result next steps  -->
     <string name="submission_test_result_negative_steps_negative_heading">"Your Test Result"</string>
     <!-- YTXT: Body text for next steps section of test negative result -->
-    <string name="submission_test_result_negative_steps_negative_body">"The laboratory result indicates no verification that you have coronavirus SARS-CoV-2.\n\nPlease delete the test from CoraLibre, so that you can save a new test code here if necessary."</string>
+    <string name="submission_test_result_negative_steps_negative_body">"The laboratory result indicates no verification that you have coronavirus SARS-CoV-2.\n\nPlease delete the test from the CoraLibre-App, so that you can save a new test code here if necessary."</string>
     <!-- XBUT: negative test result : remove the test button -->
     <string name="submission_test_result_negative_remove_test_button">"Delete Test"</string>
     <!-- XHED: Page headline for other warnings screen  -->

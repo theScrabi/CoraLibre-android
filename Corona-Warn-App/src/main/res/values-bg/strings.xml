@@ -87,7 +87,6 @@
     <!-- XACT: menu description for screen readers -->
     <string name="accessibility_close">"Затваряне"</string>
     <!-- XACT: menu description for screen readers -->
-    <string name="accessibility_logo">"Corona-Warn-App"</string>
     <!-- XACT: button description for screen readers to be appended at the end of content without focusable subcontent that are explored by touch -->
     <string name="accessibility_button">"Бутон"</string>
 
@@ -110,13 +109,11 @@
     <!-- NOTR -->
     <string name="notification_id"><xliff:g id="notification_id">"1"</xliff:g></string>
     <!-- XTXT: Notification channel name for os settings -->
-    <string name="notification_name">"Corona-Warn-App"</string>
     <!-- XTXT: Notification channel description for os settings -->
-    <string name="notification_description">"Известия от приложението Corona-Warn-App"</string>
+    <string name="notification_description">Известия от приложението CoraLibre-App</string>
     <!-- XHED: Notification title -->
-    <string name="notification_headline">"Corona-Warn-App"</string>
     <!-- XTXT: Notification body -->
-    <string name="notification_body">"Имате нови съобщения от приложението Corona-Warn-App."</string>
+    <string name="notification_body">Имате нови съобщения от приложението CoraLibre-App.</string>
 
     <!-- ####################################
               App Auto Update
@@ -125,7 +122,7 @@
     <!-- XHED: App Auto Update dialog title -->
     <string name="update_dialog_title">"Има налична актуализация"</string>
     <!-- XTXT: App Auto Update dialog message -->
-    <string name="update_dialog_message">"Имайте предвид, че е необходимо да инсталирате последната актуализация, за да можете да използвате приложението Corona-Warn-App."</string>
+    <string name="update_dialog_message">"Имайте предвид, че е необходимо да инсталирате последната актуализация, за да можете да използвате приложението CoraLibre-App."</string>
     <!-- XBUT: App Auto Update button -->
     <string name="update_dialog_button">"Актуализиране"</string>
 
@@ -212,18 +209,18 @@
     <!-- XHED: main, FAQ -->
     <string name="main_about_headline">"ЧЗВ"</string>
     <!-- XTXT: main, explains faq on card -->
-    <string name="main_about_body">"Тук можете да намерите отговори на често задавани въпроси относно приложението Corona-Warn-App. Ще Ви пренасочим към външен уебсайт на правителството на Германия."</string>
+    <string name="main_about_body">"Тук можете да намерите отговори на често задавани въпроси относно приложението CoraLibre-App. Ще Ви пренасочим към външен уебсайт на правителството на Германия."</string>
     <!-- XTXT: FAQ link, should be translated  -->
     <string name="main_about_link">"https://www.bundesregierung.de/corona-warn-app-faq-englisch"</string>
     <!-- XACT: Opens external webpage -->
-    <string name="hint_external_webpage">"Тук можете да намерите отговори на често задавани въпроси относно приложението Corona-Warn-App. Ще Ви пренасочим към външен уебсайт."</string>
+    <string name="hint_external_webpage">"Тук можете да намерите отговори на често задавани въпроси относно приложението CoraLibre-App. Ще Ви пренасочим към външен уебсайт."</string>
 
     <!-- ####################################
                Main - Share
     ###################################### -->
 
     <!-- XHED: Share app link page title -->
-    <string name="main_share_title">"Споделете приложението Corona-Warn-App"</string>
+    <string name="main_share_title">"Споделете приложението CoraLibre-App"</string>
     <!-- XHED: Share app link page subtitle -->
     <string name="main_share_headline">"Да се преборим с коронавируса заедно"</string>
     <!-- YTXT: Share app link page body -->
@@ -233,7 +230,7 @@
     <!-- YMSG: Message when sharing is executed -->
     <string name="main_share_message">"Да се преборим с коронавируса заедно"<xliff:g id="line_break">"\n"</xliff:g>"Аз ще участвам, а ти?"<xliff:g id="line_break">"\n"</xliff:g><xliff:g id="link_play_store">"https://www.corona-warn-app.de"</xliff:g>"\n"<xliff:g id="line_break">"\n"</xliff:g></string>
     <!-- XACT: main (share) - illustraction description, explanation image -->
-    <string name="main_share_illustration_description">"Човек споделя Corona-Warn-App с четирима души."</string>
+    <string name="main_share_illustration_description">"Човек споделя CoraLibre-App с четирима души."</string>
 
     <!-- ####################################
                 Main - Overview
@@ -280,7 +277,7 @@
     <!-- XHED: App overview subtitle for glossary notifications -->
     <string name="main_overview_subtitle_glossary_notification">"Известия за излагане на риск"</string>
     <!-- YTXT: App overview body for glossary notifications -->
-    <string name="main_overview_body_glossary_notification">"Показват излаганията на риск в приложението Corona-Warn-App."</string>
+    <string name="main_overview_body_glossary_notification">"Показват излаганията на риск в приложението CoraLibre-App."</string>
     <!-- XHED: App overview subtitle for glossary keys -->
     <string name="main_overview_subtitle_glossary_keys">"Случаен идентификатор"</string>
     <!-- YTXT: App overview body for glossary keys -->
@@ -288,7 +285,7 @@
     <!-- XACT: main (overview) - illustraction description, explanation image -->
     <string name="main_overview_illustration_description">"Смартфон, показващ различни блокове съдържание с номера от 1 до 3."</string>
     <!-- XACT: App main page title -->
-    <string name="main_title">"Главна страница на приложението Corona-Warn-App"</string>
+    <string name="main_title">"Главна страница на приложението CoraLibre-App"</string>
 
     <!-- ####################################
                Risk Details
@@ -396,7 +393,7 @@
     <!-- XHED: onboarding(together) - fight corona -->
     <string name="onboarding_headline">"Да се преборим с коронавируса заедно"</string>
     <!-- XHED: onboarding(together) - two/three line headline under an illustration -->
-    <string name="onboarding_subtitle">"Повече защита за Вас и за всички нас. С помощта на приложението Corona-Warn-App можем да прекъснем веригите на заразяване много по-бързо."</string>
+    <string name="onboarding_subtitle">"Повече защита за Вас и за всички нас. С помощта на приложението CoraLibre-App можем да прекъснем веригите на заразяване много по-бързо."</string>
     <!-- YTXT: onboarding(together) - inform about the app -->
     <string name="onboarding_body">"Превърнете устройството си в предупредителна система за коронавирус. Прегледайте своя статус на риск и разберете дали през последните 14 дни сте имали близък контакт с лице, диагностицирано с COVID-19."</string>
     <!-- YTXT: onboarding(together) - explain application -->
@@ -409,7 +406,7 @@
     <string name="onboarding_privacy_headline">"Поверителност"</string>
 
     <!-- XACT: onboarding(privacy) - illustraction description, header image -->
-    <string name="onboarding_privacy_illustration_description">"Жена използва приложението Corona-Warn-App на смартфона си. Икона, изобразяваща катинар на фона на щит символизира криптирането на данните."</string>
+    <string name="onboarding_privacy_illustration_description">"Жена използва приложението CoraLibre-App на смартфона си. Икона, изобразяваща катинар на фона на щит символизира криптирането на данните."</string>
     <!-- XACT: Onboarding (tracing) page title -->
     <string name="onboarding_tracing_accessibility_title">"Въведение - страница 3 от 6 Как да активирате регистрирането на излагания на риск"</string>
     <!-- XHED: onboarding(tracing) - how to enable tracing -->
@@ -429,7 +426,7 @@
     <!-- XTXT: onboarding(tracing) - dialog about tracing permission declined -->
     <string name="onboarding_tracing_dialog_headline">"Оторизация"</string>
     <!-- YMSI: onboarding(tracing) - dialog about tracing -->
-    <string name="onboarding_tracing_dialog_body">"Това означава, че приложението Corona-Warn-App не може да изпраща или получава известия за вашия статус на риск от заразяване с COVID-19. Тази настройка може да се промени по всяко време."</string>
+    <string name="onboarding_tracing_dialog_body">"Това означава, че приложението CoraLibre-App не може да изпраща или получава известия за вашия статус на риск от заразяване с COVID-19. Тази настройка може да се промени по всяко време."</string>
     <!-- XBUT: onboarding(tracing) - positive button (right) -->
     <string name="onboarding_tracing_dialog_button_positive">"Да не се активира"</string>
     <!-- XBUT: onboarding(tracing) - negative button (right) -->
@@ -437,7 +434,7 @@
     <!-- XACT: onboarding(tracing) - dialog about background jobs header text -->
     <string name="onboarding_background_fetch_dialog_headline">"Фоновите актуализации са дезактивирани"</string>
     <!-- YMSI: onboarding(tracing) - dialog about background jobs -->
-    <string name="onboarding_background_fetch_dialog_body">"Дезактивирали сте фоновите актуализации за приложението Corona-Warn-App. Моля, активирайте ги, за да използвате автоматичното регистриране на излагания на риск. Ако не го направите, регистрирането на излаганията може да бъде стартирано само ръчно от приложението. Може да активирате фоновите актуализации за приложението от настройките на Вашето устройство."</string>
+    <string name="onboarding_background_fetch_dialog_body">"Дезактивирали сте фоновите актуализации за приложението CoraLibre-App. Моля, активирайте ги, за да използвате автоматичното регистриране на излагания на риск. Ако не го направите, регистрирането на излаганията може да бъде стартирано само ръчно от приложението. Може да активирате фоновите актуализации за приложението от настройките на Вашето устройство."</string>
     <!-- XBUT: onboarding(tracing) - dialog about background jobs, open device settings -->
     <string name="onboarding_background_fetch_dialog_button_positive">"Към настройките за устройството"</string>
     <!-- XBUT: onboarding(tracing) - dialog about background jobs, continue in app -->
@@ -445,7 +442,7 @@
     <!-- XACT: onboarding(tracing) - dialog about energy optimized header text -->
     <string name="onboarding_energy_optimized_dialog_headline">"Разрешаване на приоритетната работа във фонов режим"</string>
     <!-- YMSI: onboarding(tracing) - dialog about energy optimized -->
-    <string name="onboarding_energy_optimized_dialog_body">"Активирайте приоритетната работа във фонов режим, за да позволите на приложението да определя рисковете, на които сте изложени, по всяко време като работи на заден план (препоръчително). Това ще изключи оптимизацията на потребление на батерия само за приложението Corona-Warn-App. Не очакваме това да доведе до значително по-бързо изтощаване на батерията на вашето устройство.\n\nАко не разрешите тази настройка, препоръчваме да отваряте приложението ръчно поне веднъж на всеки 24 часа."</string>
+    <string name="onboarding_energy_optimized_dialog_body">"Активирайте приоритетната работа във фонов режим, за да позволите на приложението да определя рисковете, на които сте изложени, по всяко време като работи на заден план (препоръчително). Това ще изключи оптимизацията на потребление на батерия само за приложението CoraLibre-App. Не очакваме това да доведе до значително по-бързо изтощаване на батерията на вашето устройство.\n\nАко не разрешите тази настройка, препоръчваме да отваряте приложението ръчно поне веднъж на всеки 24 часа."</string>
     <!-- XBUT: onboarding(tracing) - dialog about energy optimized, open device settings -->
     <string name="onboarding_energy_optimized_dialog_button_positive">"Разрешавам"</string>
     <!-- XBUT: onboarding(tracing) - dialog about energy optimized, continue in app -->
@@ -469,7 +466,7 @@
     <!-- XHED: onboarding(test) - about positive tests -->
     <string name="onboarding_test_headline">"Ако имате поставена диагноза COVID-19,..."</string>
     <!-- XHED: onboarding(test) - two/three line headline under an illustration -->
-    <string name="onboarding_test_subtitle">"... моля съобщете за това в приложението Corona-Warn-App. Споделянето на резултатите от Вашите тестове е доброволно и безопасно. Направете го в името на общото здраве."</string>
+    <string name="onboarding_test_subtitle">"... моля съобщете за това в приложението CoraLibre-App. Споделянето на резултатите от Вашите тестове е доброволно и безопасно. Направете го в името на общото здраве."</string>
     <!-- YTXT: onboarding(test) - explain test -->
     <string name="onboarding_test_body">"Вашето известие се криптира с висока степен на сигурност и се обработва на защитен сървър. Лицата, чиито криптирани случайни ИД кодове са запазени на Вашето устройство, ще получат предупреждение, както и информация относно това, което трябва да направят."</string>
     <!-- XACT: onboarding(test) - illustraction description, header image -->
@@ -483,7 +480,7 @@
     <!-- YTXT: onboarding(datashare) - explain test -->
     <string name="onboarding_notifications_body">"След това може да се самоизолирате, за да защитите околните и да разберете къде може да се тествате."</string>
     <!-- XACT: onboarding(notifications) - illustraction description, header image -->
-    <string name="onboarding_notifications_illustration_description">"Жена, която получава известие от приложението Corona-Warn-App."</string>
+    <string name="onboarding_notifications_illustration_description">"Жена, която получава известие от приложението CoraLibre-App."</string>
 
     <!-- ####################################
              Onboarding sixteen include
@@ -581,7 +578,7 @@
     <!-- YTXT: settings(notification) - description text when it notifications are enabled -->
     <string name="settings_notifications_body_active">"Посочете за какво желаете да получавате известия"</string>
     <!-- XTXT: settings(notification) - explains what the user has to do to activate settings -->
-    <string name="settings_notifications_body_inactive">"За да активирате известията, от настройките на Вашето устройство трябва да разрешите на приложението Corona-Warn-App да Ви изпраща известия."</string>
+    <string name="settings_notifications_body_inactive">"За да активирате известията, от настройките на Вашето устройство трябва да разрешите на приложението CoraLibre-App да Ви изпраща известия."</string>
     <!-- XHED: settings(notification) - card headline -->
     <string name="settings_notifications_headline_card">"Активиране на известия"</string>
     <!-- XHED: settings - notification headline on settings overview -->
@@ -593,9 +590,9 @@
     <!-- XBUT: settings(notification) - go to operating settings -->
     <string name="settings_notifications_button_open_settings">"Към настройките за устройството"</string>
     <!-- XACT: main (overview) - illustraction description, explanation image, displays notificatin status, active -->
-    <string name="settings_notifications_illustration_description_active">"Жена, която получава известие от приложението Corona-Warn-App."</string>
+    <string name="settings_notifications_illustration_description_active">"Жена, която получава известие от приложението CoraLibre-App."</string>
     <!-- XACT: main (overview) - illustraction description, explanation image, displays notificatin status, inactive -->
-    <string name="settings_notifications_illustration_description_inactive">"Жена, която е дезактивирала известията от приложението Corona-Warn-App."</string>
+    <string name="settings_notifications_illustration_description_inactive">"Жена, която е дезактивирала известията от приложението CoraLibre-App."</string>
     <!-- XBUT: settings - go to reset application -->
     <string name="settings_reset_title">"Изчистване на данните в приложението"</string>
     <!-- XTXT: settings(reset) - explains the user what do expect when he navigates to reset -->
@@ -629,7 +626,7 @@
     <!-- XHED: settings(background priority) - multiline headline below illustration -->
     <string name="settings_background_priority_headline">"Автоматична актуализация на статус на риск"</string>
     <!-- YTXT: settings(background priority) - description text -->
-    <string name="settings_background_priority_body">"Ако сте активирали приоритетната работа във фонов режим, приложението може да определи Вашия статус на риск по всяко време. Това ще изключи оптимизацията на потребление на батерия само за приложението Corona-Warn-App."</string>
+    <string name="settings_background_priority_body">"Ако сте активирали приоритетната работа във фонов режим, приложението може да определи Вашия статус на риск по всяко време. Това ще изключи оптимизацията на потребление на батерия само за приложението CoraLibre-App."</string>
     <!-- XACT: settings(background priority) - illustraction description -->
     <string name="settings_background_priority_illustration_description"/>
     <!-- XTXT: settings(background priority) - explains user what to do on card if background priority is enabled -->
@@ -652,7 +649,7 @@
     <!-- XHED: Subtitle for about information page -->
     <string name="information_about_headline">"Да се преборим с коронавируса заедно"</string>
     <!-- YTXT: Body text for about information page -->
-    <string name="information_about_body_emphasized">"Институтът „Роберт Кох“ (RKI) е федералната служба за обществено здравеопазване в Германия. Той е издател на приложението Corona-Warn-App по поръчка на федералното правителство. Приложението е предназначено да бъде дигитално допълнение на вече въведените мерки за опазване на общественото здраве: социално дистанциране, поддържане на висока хигиена и носене на маски."</string>
+    <string name="information_about_body_emphasized">"Институтът „Роберт Кох“ (RKI) е федералната служба за обществено здравеопазване в Германия. Той е издател на приложението CoraLibre-App по поръчка на федералното правителство. Приложението е предназначено да бъде дигитално допълнение на вече въведените мерки за опазване на общественото здраве: социално дистанциране, поддържане на висока хигиена и носене на маски."</string>
     <!-- YTXT: Body text for about information page -->
     <string name="information_about_body">"Хората, които използват приложението, помагат за проследяване и прекъсване на веригите на заразяване. Приложението запазва във Вашето устройство данните за контактите Ви с други хора. Получавате известие, ако сте били в контакт с лица, които впоследствие са били диагностицирани с COVID-19. Вашата самоличност и неприкосновеността на данните Ви са защитени по всяко време."</string>
     <!-- XACT: describes illustration -->
@@ -660,7 +657,7 @@
     <!-- XHED: Page title for privacy information page, also menu item / button text -->
     <string name="information_privacy_title">"Поверителност"</string>
     <!-- XACT: describes illustration -->
-    <string name="information_privacy_illustration_description">"Жена използва приложението Corona-Warn-App на смартфона си. Икона, изобразяваща катинар на фона на щит символизира криптирането на данните."</string>
+    <string name="information_privacy_illustration_description">"Жена използва приложението CoraLibre-App на смартфона си. Икона, изобразяваща катинар на фона на щит символизира криптирането на данните."</string>
     <!-- XTXT: Path to the full blown privacy html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_privacy_html_path">"privacy_en.html"</string>
     <!-- XHED: Page title for terms of use information page, also menu item / button text -->
@@ -676,13 +673,11 @@
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"Как можем да Ви помогнем?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body">"За технически въпроси относно Corona-Warn-App се обадете на горещия телефон.\n\nХората със слухови затруднения имат възможността да използват горещата телефонна линия чрез услугата Tess Relay (за превод от писмен немски на немския език на знаците). Можете да свалите необходимия софтуер от App Store/Google Play."</string>
+    <string name="information_contact_body">"За технически въпроси относно CoraLibre-App се обадете на горещия телефон.\n\nХората със слухови затруднения имат възможността да използват горещата телефонна линия чрез услугата Tess Relay (за превод от писмен немски на немския език на знаците). Можете да свалите необходимия софтуер от App Store/Google Play."</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_subtitle_phone">"Гореща линия за технически въпроси:"</string>
     <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
-    <string name="information_contact_button_phone">"+49 800 7540001"</string>
     <!-- XBUT: CAUTION - ONLY UPDATE THE NUMBER IF NEEDED, ONLY NUMBERS AND NO SPECIAL CHARACTERS EXCEPT "+" and "space" ALLOWED IN THIS FIELD; -->
-    <string name="information_contact_phone_call_number">"+49 800 7540001"</string>
     <!-- XTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body_phone">"Нашият екип за обслужване на клиенти е готов да Ви помогне."</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
@@ -827,7 +822,7 @@
     <!-- XHED: Page headline for results next steps  -->
     <string name="submission_test_result_steps_added_heading">"Тестът е добавен успешно"</string>
     <!-- YTXT: Body text for for results next steps  -->
-    <string name="submission_test_result_steps_added_body">"Вашият тест е запазен в приложението Corona-Warn-App."</string>
+    <string name="submission_test_result_steps_added_body">Вашият тест е запазен в приложението CoraLibre-App.</string>
     <!-- XHED: Page headline for pending test result next steps  -->
     <string name="submission_test_result_pending_steps_waiting_heading">"Все още няма резултат от теста"</string>
     <!-- YTXT: Body text for next steps section of waiting test result page -->
@@ -839,7 +834,7 @@
     <!-- XHED: Page headline for negative test result next steps  -->
     <string name="submission_test_result_negative_steps_negative_heading">"Резултатът от Вашия тест"</string>
     <!-- YTXT: Body text for next steps section of test negative result -->
-    <string name="submission_test_result_negative_steps_negative_body">"Вашият лабораторен резултат не потвърждава заразяване с коронавирус SARS-CoV-2.\n\nМоля, изтрийте теста от приложението Corona-Warn-App, за да можете да запазите нов код на тест, ако е необходимо."</string>
+    <string name="submission_test_result_negative_steps_negative_body">Вашият лабораторен резултат не потвърждава заразяване с коронавирус SARS-CoV-2.\n\nМоля, изтрийте теста от приложението CoraLibre-App, за да можете да запазите нов код на тест, ако е необходимо.</string>
     <!-- XBUT: negative test result : remove the test button -->
     <string name="submission_test_result_negative_remove_test_button">"Изтриване на тест"</string>
     <!-- XHED: Page headline for positive test result screen  -->
@@ -859,7 +854,7 @@
     <!-- XHED: Page headline for invalid test result screen  -->
     <string name="submission_test_result_invalid_steps_invalid_heading">"Резултатът от Вашия тест"</string>
     <!-- YTXT: Body text for next steps section of invalid test result-->
-    <string name="submission_test_result_invalid_steps_invalid_body">"Възникна проблем при определянето на резултата от Вашия тест. Моля, свържете се със съответния център за тестване или лаборатория, за да получите информация какво трябва да направите.\n\nМоля, изтрийте теста от Вашето Corona-Warn-App приложение, за да можете да запазите нов код на тест, ако е необходимо."</string>
+    <string name="submission_test_result_invalid_steps_invalid_body">"Възникна проблем при определянето на резултата от Вашия тест. Моля, свържете се със съответния център за тестване или лаборатория, за да получите информация какво трябва да направите.\n\nМоля, изтрийте теста от Вашето CoraLibre-App приложение, за да можете да запазите нов код на тест, ако е необходимо."</string>
     <!-- XBUT: invalid test result : remove the test button -->
     <string name="submission_test_result_invalid_remove_test_button">"Изтриване на тест"</string>
     <!-- XHED: Dialog title for tracing required dailog  -->
@@ -899,7 +894,7 @@
     <!-- XHED: Page title for menu at the start of the submission process  -->
     <string name="submission_intro_title">"Правили ли сте си тест?"</string>
     <!-- XHED: Page headline for menu the at start of the submission process  -->
-    <string name="submission_intro_headline">"Ето как работи приложението Corona-Warn-App"</string>
+    <string name="submission_intro_headline">"Ето как работи приложението CoraLibre-App"</string>
     <!-- YTXT: submission introduction text -->
     <string name="submission_intro_text">"За да работи добре приложението, разчитаме на подкрепата на хората, диагностицирани с COVID-19.\n\nТъй като се разменят само криптирани случайни ИД кодове, анонимността Ви е гарантирана. Може да предприемете следните стъпки:"</string>
     <!-- XBUT: Submission introduction next button-->
@@ -913,7 +908,7 @@
         <item>"Ако не разполагате с ТАН код, по телефона може да заявите да Ви бъде предоставен такъв."</item>
     </string-array>
     <!-- XACT: Submission Intro page title -->
-    <string name="submission_intro_accessibility_title">"Правили ли сте си тест? Ето как работи приложението Corona-Warn-App"</string>
+    <string name="submission_intro_accessibility_title">"Правили ли сте си тест? Ето как работи приложението CoraLibre-App"</string>
 
     <!-- Dispatcher -->
     <!-- XHED: Page headline for dispatcher menu  -->
@@ -1163,9 +1158,9 @@
     <!-- XTXT: error dialog - detailed text if there is an error during external navigation / external action -->
     <string name="errors_external_action">"На може да извършите това действие. Моля, обадете се на горещата линия."</string>
     <!-- XTXT: error dialog - phone still needs Google Play Services or Google Mobile Services update -->
-    <string name="errors_google_update_needed">"Вашето приложение Corona-Warn-App е инсталирано правилно, но „Системата за известяване при излагания на риск от заразяване с COVID-19” не се предлага за операционната система на Вашия смартфон. Това означава, че не можете да използвате приложението Corona-Warn-App. Повече информация може да намерите в страницата „ЧЗВ“ на адрес: https://www.coronawarn.app/en/faq/"</string>
+    <string name="errors_google_update_needed">"Вашето приложение CoraLibre-App е инсталирано правилно, но „Системата за известяване при излагания на риск от заразяване с COVID-19” не се предлага за операционната система на Вашия смартфон. Това означава, че не можете да използвате приложението CoraLibre-App. Повече информация може да намерите в страницата „ЧЗВ“ на адрес: https://www.coronawarn.app/en/faq/"</string>
     <!-- XTXT: error dialog - either Google API Error (10) or reached request limit per day -->
-    <string name="errors_google_api_error">"Приложението Corona-Warn-App работи правилно, но не можем да актуализираме Вашия статус на риск. Регистрирането на излагания на риск все още е активно и функционира правилно. За повече информация посетете страницата „ЧЗВ“ на адрес: https://www.coronawarn.app/en/faq/"</string>
+    <string name="errors_google_api_error">"Приложението CoraLibre-App работи правилно, но не можем да актуализираме Вашия статус на риск. Регистрирането на излагания на риск все още е активно и функционира правилно. За повече информация посетете страницата „ЧЗВ“ на адрес: https://www.coronawarn.app/en/faq/"</string>
 
     <!-- ####################################
                Generic Error Messages

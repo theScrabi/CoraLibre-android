@@ -88,7 +88,6 @@
     <!-- XACT: menu description for screen readers -->
     <string name="accessibility_close">"Schließen"</string>
     <!-- XACT: menu description for screen readers -->
-    <string name="accessibility_logo">CoraLibre-App</string>
     <!-- XACT: button description for screen readers to be appended at the end of content without focusable subcontent that are explored by touch -->
     <string name="accessibility_button">"Taste"</string>
 
@@ -111,11 +110,9 @@
     <!-- NOTR -->
     <string name="notification_id"><xliff:g id="notification_id">"1"</xliff:g></string>
     <!-- XTXT: Notification channel name for os settings -->
-    <string name="notification_name">CoraLibre-App</string>
     <!-- XTXT: Notification channel description for os settings -->
     <string name="notification_description">Benachrichtigungen von der CoraLibre-App</string>
     <!-- XHED: Notification title -->
-    <string name="notification_headline">CoraLibre-App</string>
     <!-- XTXT: Notification body -->
     <string name="notification_body">Es gibt Neuigkeiten von der CoraLibre-App.</string>
 
@@ -841,7 +838,7 @@
     <!-- XHED: Page headline for negative test result next steps  -->
     <string name="submission_test_result_negative_steps_negative_heading">"Ihr Testergebnis"</string>
     <!-- YTXT: Body text for next steps section of test negative result -->
-    <string name="submission_test_result_negative_steps_negative_body">"Der Labortest hat keinen Nachweis für das Coronavirus SARS-CoV-2 bei Ihnen ergeben. \n\nBitte entfernen Sie den Test wieder aus CoraLibre, damit Sie bei Bedarf einen neuen Test hinterlegen können."</string>
+    <string name="submission_test_result_negative_steps_negative_body">Der Labortest hat keinen Nachweis für das Coronavirus SARS-CoV-2 bei Ihnen ergeben. \n\nBitte entfernen Sie den Test wieder aus der CoraLibre-App, damit Sie bei Bedarf einen neuen Test hinterlegen können.</string>
     <!-- XBUT: negative test result : remove the test button -->
     <string name="submission_test_result_negative_remove_test_button">"Test entfernen"</string>
     <!-- XHED: Page headline for other warnings screen  -->
