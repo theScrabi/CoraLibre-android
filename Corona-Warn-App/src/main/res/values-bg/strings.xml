@@ -666,19 +666,15 @@
     <!-- XTXT: Path to the full blown terms html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_terms_html_path">"terms_en.html"</string>
     <!-- XHED: Page title for technical contact and hotline information page, also menu item / button text -->
-    <string name="information_contact_title">"Технически въпроси"</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"Как можем да Ви помогнем?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body">"За технически въпроси относно CoraLibre-App се обадете на горещия телефон.\n\nХората със слухови затруднения имат възможността да използват горещата телефонна линия чрез услугата Tess Relay (за превод от писмен немски на немския език на знаците). Можете да свалите необходимия софтуер от App Store/Google Play."</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
-    <string name="information_contact_subtitle_phone">"Гореща линия за технически въпроси:"</string>
     <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
     <!-- XBUT: CAUTION - ONLY UPDATE THE NUMBER IF NEEDED, ONLY NUMBERS AND NO SPECIAL CHARACTERS EXCEPT "+" and "space" ALLOWED IN THIS FIELD; -->
     <!-- XTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_phone">"Нашият екип за обслужване на клиенти е готов да Ви помогне."</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_open">"Езици: немски, английски, турски\nРаботно време:"<xliff:g id="line_break">"\n"</xliff:g>"понеделник до неделя: 7:00 - 22:00"<xliff:g id="line_break">"\n(с изключение на национални празници)"</xliff:g><xliff:g id="line_break">"\nОбаждането е безплатно."</xliff:g></string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body_other">"Ако имате въпроси, свързани със здравето, се обадете на личния си лекар или на горещата линия на службата за медицинска помощ на телефон 116 117"</string>
     <!-- XACT: describes illustration -->

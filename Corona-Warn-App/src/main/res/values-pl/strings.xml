@@ -666,19 +666,15 @@
     <!-- XTXT: Path to the full blown terms html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_terms_html_path">"terms_en.html"</string>
     <!-- XHED: Page title for technical contact and hotline information page, also menu item / button text -->
-    <string name="information_contact_title">"Infolinia techniczna"</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"Jak możemy Ci pomóc?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body">"W przypadku pytań technicznych dotyczących aplikacji CoraLibre-App proszę się skontaktować z naszą infolinią.\n\nOsoby niedosłyszące mogą skorzystać z usług Tess Relay (tłumaczenie z pisanego języka niemieckiego na język migowy i odwrotnie) w celu skontaktowania się z infolinią. To oprogramowanie można pobrać z App Store/Google Play."</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
-    <string name="information_contact_subtitle_phone">"Infolinia techniczna:"</string>
     <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
     <!-- XBUT: CAUTION - ONLY UPDATE THE NUMBER IF NEEDED, ONLY NUMBERS AND NO SPECIAL CHARACTERS EXCEPT "+" and "space" ALLOWED IN THIS FIELD; -->
     <!-- XTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_phone">"Nasz zespół obsługi klienta jest gotowy do pomocy."</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_open">"Języki: niemiecki, angielski, turecki\nGodziny pracy:"<xliff:g id="line_break">"\n"</xliff:g>"od poniedziałku do soboty: 7:00 - 22:00"<xliff:g id="line_break">"\n(za wyjątkiem świąt państwowych)"</xliff:g><xliff:g id="line_break">"\nPołączenie jest bezpłatne."</xliff:g></string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body_other">"W razie jakichkolwiek pytań związanych ze zdrowiem skontaktuj się z lekarzem rodzinnym lub pogotowiem ratunkowym pod numerem: 116 117."</string>
     <!-- XACT: describes illustration -->

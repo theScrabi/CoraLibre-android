@@ -573,7 +573,7 @@
     <!-- XACT: settings(tracing) - describes illustration -->
     <string name="settings_tracing_bluetooth_illustration_description_inactive">"A person has turned off Bluetooth on their smartphone, so an encounter with two other persons is not logged."</string>
     <!-- XACT: settings(tracing) - describes illustration -->
-    <string name="settings_tracing_location_illustration_description_inactive"/>
+    <string name="settings_tracing_location_illustration_description_inactive" />
     <!-- XACT: settings(tracing) - describes illustration -->
     <string name="settings_tracing_connection_illustration_description_inactive">"A person has turned off the Internet connection on their smartphone, so an encounter with two other persons is not logged."</string>
 
@@ -638,7 +638,7 @@
     <!-- YTXT: settings(background priority) - description text -->
     <string name="settings_background_priority_body">"If you activate prioritized background activity, the App can determine your risk status at any time. This disables battery life optimization for the CoraLibre-App only."</string>
     <!-- XACT: settings(background priority) - illustraction description -->
-    <string name="settings_background_priority_illustration_description"/>
+    <string name="settings_background_priority_illustration_description" />
     <!-- XTXT: settings(background priority) - explains user what to do on card if background priority is enabled -->
     <string name="settings_background_priority_card_body">"To disable prioritized background activity, please deactivate it in the device settings."</string>
     <!-- XBUT: settings(background priority) - go to operating system settings button on card -->
@@ -679,19 +679,13 @@
     <!-- XTXT: Path to the full blown terms html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_terms_html_path">"terms_en.html"</string>
     <!-- XHED: Page title for technical contact and hotline information page, also menu item / button text -->
-    <string name="information_contact_title">"Technical Hotline"</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"How can we help you?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body">"For technical questions about CoraLibre, please contact us on GitHub."</string>
-     <!-- XHED: Subtitle for technical contact and hotline information page -->
-    <string name="information_contact_subtitle_phone">"Technical hotline:"</string>
-    <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
-    <string name="information_contact_button_phone">"TODO: CoraLibre alternative"</string>
-    <!-- XBUT: CAUTION - ONLY UPDATE THE NUMBER IF NEEDED, ONLY NUMBERS AND NO SPECIAL CHARACTERS EXCEPT "+" and "space" ALLOWED IN THIS FIELD; -->
-    <string name="information_contact_phone_call_number">"TODO: CoraLibre alternative"</string>
-    <!-- XTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_phone">"Our customer service is here to help."</string>
+    <!-- XHED: Subtitle for technical contact and hotline information page -->
+    <string name="information_contact_subtitle_url">"GitHub project"</string>
+    <string name="information_contact_url">https://github.com/CoraLibre/CoraLibre-android/issues</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body_open">"Languages: German, English</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
@@ -1354,4 +1348,5 @@
     <string name="interoperability_onboarding_list_subtitle_failrequest_no_network">"Your Internet connection may have been lost. Please ensure that you are connected to the Internet."</string>
     <!-- XBUT: Title for the interoperability onboarding Settings-Button if no network is available -->
     <string name="interoperability_onboarding_list_button_title_no_network">"Open Device Settings"</string>
+    <string name="information_contact_title">Technical Support</string>
 </resources>

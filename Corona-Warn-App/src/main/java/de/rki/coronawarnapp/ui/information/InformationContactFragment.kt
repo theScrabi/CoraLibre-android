@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import de.rki.coronawarnapp.R
 import de.rki.coronawarnapp.databinding.FragmentInformationContactBinding
 import de.rki.coronawarnapp.ui.main.MainActivity
-import de.rki.coronawarnapp.util.ExternalActionHelper
+import de.rki.coronawarnapp.util.convertToHyperlink
 import de.rki.coronawarnapp.util.ui.viewBindingLazy
 
 /**
@@ -20,6 +20,12 @@ class InformationContactFragment : Fragment(R.layout.fragment_information_contac
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setButtonOnClickListener()
+        makeLinkClickable()
+    }
+
+    private fun makeLinkClickable() {
+        binding.informationContactBodyPhone
+            .convertToHyperlink(getString(R.string.information_contact_url))
     }
 
     override fun onResume() {
@@ -30,10 +36,6 @@ class InformationContactFragment : Fragment(R.layout.fragment_information_contac
     private fun setButtonOnClickListener() {
         binding.informationContactHeader.headerButtonBack.buttonIcon.setOnClickListener {
             (activity as MainActivity).goBack()
-        }
-        binding.informationContactNavigationRowPhone.navigationRow.setOnClickListener {
-            val number = getString(R.string.information_contact_phone_call_number)
-            ExternalActionHelper.call(this, number)
         }
     }
 }

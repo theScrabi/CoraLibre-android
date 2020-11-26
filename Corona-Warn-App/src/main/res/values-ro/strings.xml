@@ -666,19 +666,15 @@
     <!-- XTXT: Path to the full blown terms html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_terms_html_path">"terms_en.html"</string>
     <!-- XHED: Page title for technical contact and hotline information page, also menu item / button text -->
-    <string name="information_contact_title">"Hotline tehnic"</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"Cum vă putem ajuta?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body">"Pentru întrebări tehnice despre aplicația CoraLibre, contactați hotline-ul.\n\nPersoanele cu deficiențe de auz pot utiliza serviciile Tess Relay (interpretare între limba germană scrisă și limbajul semnelor) pentru a contacta hotline-ul telefonic. Puteți descărca software-ul din App Store/Google Play."</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
-    <string name="information_contact_subtitle_phone">"Hotline tehnic:"</string>
     <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
     <!-- XBUT: CAUTION - ONLY UPDATE THE NUMBER IF NEEDED, ONLY NUMBERS AND NO SPECIAL CHARACTERS EXCEPT "+" and "space" ALLOWED IN THIS FIELD; -->
     <!-- XTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_phone">"Serviciul clienți vă stă la dispoziție."</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_open">"Limbi: germană, engleză, turcă\nProgram de lucru:"<xliff:g id="line_break">"\n"</xliff:g>"luni - sâmbătă: 07:00 - 22:00"<xliff:g id="line_break">"\n(exceptând sărbătorile legale)"</xliff:g><xliff:g id="line_break">"\nApelul este gratuit."</xliff:g></string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body_other">"Dacă aveți întrebări legate de starea de sănătate, vă rugăm să contactați medicul de familie sau hotline-ul pentru servicii medicale de urgență, la numărul de telefon: 112."</string>
     <!-- XACT: describes illustration -->

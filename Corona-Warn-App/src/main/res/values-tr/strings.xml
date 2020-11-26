@@ -667,19 +667,15 @@
     <!-- XTXT: Path to the full blown terms html, to translate it exchange "_de" to "_en" and provide the corresponding html file -->
     <string name="information_terms_html_path">"terms_tr.html"</string>
     <!-- XHED: Page title for technical contact and hotline information page, also menu item / button text -->
-    <string name="information_contact_title">"Teknik Yardım Hattı"</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
     <string name="information_contact_headline">"Size nasıl yardımcı olabiliriz?"</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body">"CoraLibre-App hakkında teknik sorularınız için lütfen yardım hattımızla iletişime geçin.\n\nİşitme engeli bulunan kişiler yardım hattı ile iletişime geçmek için Tess Relay hizmetlerini (Almanca yazı dili ile işaret dili arasında tercüme) kullanabilir. Yazılımı App Store/Google Play\'den indirebilirsiniz."</string>
     <!-- XHED: Subtitle for technical contact and hotline information page -->
-    <string name="information_contact_subtitle_phone">"Teknik yardım hattı:"</string>
     <!-- XLNK: Button / hyperlink to phone call for technical contact and hotline information page -->
     <!-- XBUT: CAUTION - ONLY UPDATE THE NUMBER IF NEEDED, ONLY NUMBERS AND NO SPECIAL CHARACTERS EXCEPT "+" and "space" ALLOWED IN THIS FIELD; -->
     <!-- XTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_phone">"Müşteri hizmetlerimiz size yardımcı olmaya hazır."</string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
-    <string name="information_contact_body_open">"Diller: Almanca, İngilizce, Türkçe\nMesai saatleri:"<xliff:g id="line_break">"\n"</xliff:g>"Pazartesi - Cumartesi: 7.00 - 22.00"<xliff:g id="line_break">"\n(ulusal tatiller hariçtir)"</xliff:g><xliff:g id="line_break">"\nAramalar ücretsizdir."</xliff:g></string>
     <!-- YTXT: Body text for technical contact and hotline information page -->
     <string name="information_contact_body_other">"Sağlıkla ilgili tüm sorularınız için lütfen aile hekiminizle veya tıbbi acil servis yardım hattı ile iletişime geçin. Telefon: 116 117."</string>
     <!-- XACT: describes illustration -->
