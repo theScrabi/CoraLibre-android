@@ -97,6 +97,7 @@ class OnboardingTracingFragment : Fragment(R.layout.fragment_onboarding_tracing)
     }
 
     private fun navigate() {
+        // TODO: show permission dialog from SDK if any are missing (CoraPermissions object)
         findNavController().doNavigate(
             OnboardingTracingFragmentDirections.actionOnboardingTracingFragmentToOnboardingTestFragment()
         )
