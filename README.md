@@ -1,3 +1,6 @@
+# CLOSED
+The development of coralibre is stuck. This is not bad as there is another implementation called [CCTG](https://codeberg.org/corona-contact-tracing-germany/cwa-android) that does exactly what we what we where trying to achieve with this project. You can download CCTG from [fdroid](https://f-droid.org/packages/de.corona.tracing/). The CCTG Project is also looking for contributors ;)
+
 # CoraLibre – Open Source version of the German Corona-Warn-App
 
 **Note:** This app is not ready for any meaningful usage yet.
